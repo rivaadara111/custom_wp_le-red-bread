@@ -1,0 +1,50 @@
+#masthead {
+  width: 100vw;
+}
+
+#header-buffer-bar{
+background-color: #fafafa;
+height:35px;
+}
+
+.site-branding img{
+width: 300px;
+padding-top: 2rem;
+padding-left: 1rem;
+padding-bottom: 1rem;
+}
+.search-bar{
+display: flex;
+justify-content: flex-end;
+margin-right: .5rem;
+margin-top: 1rem;
+padding: .3rem;
+#s {
+    border: none;
+}
+}
+
+#searchform {
+background-color: #fafafa;
+height:40px;
+}
+.main-navigation li {
+  text-decoration: none;
+  font-family: 'Arial';
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  float: left;
+  padding: .5rem;
+  padding-left: 1rem;
+padding-right: 1rem;
+  line-height: 1rem;
+  a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 600;
+}
+}
+
+.entry-title{
+display: none;
+}
