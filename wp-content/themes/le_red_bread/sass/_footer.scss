@@ -1,0 +1,43 @@
+$darkslategrey: #222222;
+$darkgrey: #333333;
+$main: 'open_sans';
+
+.site-footer{
+  width:100%;
+  background-color: $darkgrey;
+}
+
+.footer-blocks-container{
+display: flex;
+justify-content: space-between;
+color:white;
+}
+
+.footer-blocks-item{
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+
+img{
+width: 300px;
+}
+h2{
+text-transform: uppercase;
+font-size: 1.5rem;
+}
+p{
+line-height: normal;
+}
+}
+
+.site-info{
+  height: 50px;
+  width:100%;
+ background-color: $darkslategrey;
+p{
+ color:white;
+text-align: center;
+padding-top: 10px;
+font-size: .9rem;
+}
+}

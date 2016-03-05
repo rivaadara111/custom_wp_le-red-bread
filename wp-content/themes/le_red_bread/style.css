@@ -48,13 +48,38 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 #header-buffer-bar {
   background-color: #fafafa;
-  height: 35px; }
+  height: 35px;
+  border-bottom: 1px solid silver; }
 
-.site-branding img {
-  width: 300px;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-bottom: 1rem; }
+.site-branding {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .site-branding img {
+    width: 300px;
+    padding-left: 1rem; }
+
+.social ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 20vw;
+  margin-top: 6vh;
+  margin-left: 40%; }
+  .social ul li {
+    list-style-type: none;
+    padding: 15px; }
+    .social ul li .fa {
+      color: grey; }
 
 .search-bar {
   display: -webkit-flex;
@@ -63,15 +88,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: .5rem;
-  margin-top: 1rem;
-  padding: .3rem; }
+  margin-right: 2.8rem;
+  padding: .7rem; }
+  .search-bar input {
+    background-color: #fafafa; }
   .search-bar #s {
-    border: none; }
+    border: none;
+    outline: none; }
+
+.menu li {
+  padding: .5rem;
+  color: black; }
 
 #searchform {
   background-color: #fafafa;
-  height: 40px; }
+  height: 52px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1; }
+
+.fa-search {
+  font-size: 1.15rem;
+  padding-top: 4px;
+  color: grey; }
 
 .main-navigation li {
   text-decoration: none;
@@ -79,14 +117,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   border-left: 1px solid #e1e1e1;
   border-right: 1px solid #e1e1e1;
   float: left;
-  padding: .5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  line-height: 1rem; }
+  padding: 1rem;
+  line-height: 1.2rem; }
   .main-navigation li a {
     text-decoration: none;
     color: grey;
     font-weight: 600; }
+    .main-navigation li a:hover {
+      color: black; }
+    .main-navigation li a:active {
+      border-bottom: 4px solid red; }
 
 .entry-title {
   display: none; }
@@ -288,7 +328,7 @@ th {
   font-style: italic; }
 
 @font-face {
-  font-family: 'open_sans';
+  font-family: 'open_sans_light';
   src: url("opensans-light-webfont.eot");
   src: url("opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-light-webfont.woff2") format("woff2"), url("opensans-light-webfont.woff") format("woff"), url("opensans-light-webfont.ttf") format("truetype"), url("opensans-light-webfont.svg#open_sanslight") format("svg");
   font-weight: normal;
@@ -762,3 +802,35 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  width: 100%;
+  background-color: #333333; }
+
+.footer-blocks-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white; }
+
+.footer-blocks-item img {
+  width: 300px; }
+
+.footer-blocks-item h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+.footer-blocks-item p {
+  line-height: normal; }
+
+.site-info {
+  height: 50px;
+  width: 100%;
+  background-color: #222222; }
+  .site-info p {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: .9rem; }
