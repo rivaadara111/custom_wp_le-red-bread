@@ -733,7 +733,8 @@ a {
 
 .fa {
   color: #808080;
-  font-size: .8rem; }
+  font-size: .7rem;
+  line-height: 1.6rem; }
 
 .widget {
   margin: 0 0 1.5em;
@@ -764,6 +765,18 @@ a {
 
 #primary.content-area {
   width: 70vw; }
+
+#post-13 {
+  margin-left: 9vw;
+  margin-right: .5rem; }
+  #post-13 h2, #post-13 h3 {
+    font-family: "overlock";
+    text-transform: uppercase;
+    font-size: 2rem; }
+  #post-13 h3 {
+    color: #808080;
+    text-transform: none;
+    font-size: 1.8rem; }
 
 .sticky {
   display: block; }

@@ -21,6 +21,24 @@
 #primary.content-area{
 	width: 70vw;
 }
+
+// Contact Page -----------------------------------
+
+#post-13 {
+	margin-left: 9vw;
+	margin-right: .5rem;
+	h2, h3 {
+	  font-family: $titles;
+	  text-transform: uppercase;
+		font-size: 2rem;
+	}
+	h3 {
+		color: $mediumgrey;
+		text-transform: none;
+		font-size: 1.8rem;
+	}
+}
+
 .sticky {
 	display: block;
 }
