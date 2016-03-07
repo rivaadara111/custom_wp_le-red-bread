@@ -4,6 +4,23 @@
 
 /* Posts and pages */
 
+.site-content {
+	display: flex;
+	padding: .5rem .5rem 0 .5rem;
+
+}
+
+.entry-content,
+.entry-header{
+	font-family: $main;
+}
+.entry-header{
+		color: $mediumgrey;
+}
+
+#primary.content-area{
+	width: 70vw;
+}
 .sticky {
 	display: block;
 }

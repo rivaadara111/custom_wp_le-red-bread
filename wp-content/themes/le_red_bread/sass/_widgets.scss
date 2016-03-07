@@ -2,6 +2,56 @@
 # Widgets
 --------------------------------------------------------------*/
 
+
+#secondary {
+  width: 30vw;
+	padding: 2rem;
+	border-left: 1px solid $lightgrey;
+}
+
+.widget-title{
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	color: black;
+	font-family: $titles;
+}
+
+.textwidget{
+	font-family: $main;
+  line-height: 1.6rem;
+  p{
+    margin-bottom: .7rem;
+  }
+  b {
+  color: $brandred;
+  }
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+	font-family: $main;
+}
+
+a{
+text-decoration: none;
+color:$brandred;
+  &:hover{
+    color: $hover;
+    text-decoration: underline;
+  }
+}
+
+.fa{
+  color:$mediumgrey;
+  font-size: .8rem;
+}
+
+
 .widget {
 	margin: 0 0 $base__space-unit;
 
