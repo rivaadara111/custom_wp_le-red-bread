@@ -1,84 +1,202 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-
-/* Posts and pages */
-
+/* General Posts and pages */
+// Blog Page -----------------------------------
 .site-content {
-	display: flex;
-	padding: .5rem .5rem 0 .5rem;
-
+  display: flex;
+  padding: 0 0.5rem;
 }
-
+.blog-page {
+  margin-left: 7vw;
+  #main p {
+    width: 90%;
+  }
+}
 .entry-content,
-.entry-header{
-	font-family: $main;
+.entry-header {
+  font-family: $main;
 }
-.entry-header{
-		color: $mediumgrey;
+.entry-header {
+  color: $mediumgrey;
+}
+.entry-title {
+  color: $brandred;
+  font-family: $titles;
+  font-size: 1.75rem;
+}
+#primary.content-area {
+  width: 70vw;
+  margin-top: 2rem;
+  margin-left: 7vw;
+}
+// Home Page -----------------------------------
+#post-25 h1 {
+  display: none;
+}
+//product page  -----------------------------------
+header.page-header {
+  display: none;
+}
+.product-header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-top: 1rem;
+  h1 {
+    font-family: $titles;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  p {
+    font-family: $main;
+  }
+}
+.horizontal-rule {
+  border: none;
+  color: #e1e1e1;
+  margin: 0 auto 3rem;
+  max-width: 320px;
+  padding: 0;
+  position: relative;
+  width: 50%;
+  &:after {
+    background: 0 0;
+    color: #e1e1e1;
+    content: '\f111';
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 14px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
 }
 
-#primary.content-area{
-	width: 70vw;
+//product type row
+.flex-product-type {
+  display: flex;
+  flex-direction: row;
+}
+.product-box {
+  margin: 0 2rem 2rem 2rem;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    width: 135px;
+    height: 100px;
+  }
+  h3 {
+    font-family: $titles;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: $hover;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
+//indivual product grid
+.product-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 0 2rem 4rem;
+}
+.product-square {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: $main;
+  font-size: 0.9rem;
+  margin: 0;
+  border: 1px solid $lightgrey;
+  .wp-post-image {
+    height: 250px;
+    width: 250px;
+  }
+}
+.product-data {
+  padding: 0.5rem;
+  span {
+    float: right;
+  }
+}
 // Contact Page -----------------------------------
-
 #post-13 {
-	margin-left: 9vw;
-	margin-right: .5rem;
-	h2, h3 {
-	  font-family: $titles;
-	  text-transform: uppercase;
-		font-size: 2rem;
-	}
-	h3 {
-		color: $mediumgrey;
-		text-transform: none;
-		font-size: 1.8rem;
-	}
+  margin-right: 1rem;
+  h1 {
+    display: none;
+  }
+  h2,
+  h3 {
+    font-family: $titles;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  h3 {
+    color: $mediumgrey;
+    text-transform: none;
+    font-size: 1.8rem;
+  }
 }
-
+.wpcf7-submit {
+  height: 40px;
+  width: 100px;
+  background-color: $brandred !important;
+  color: white !important;
+  box-shadow: none !important;
+  font-family: $main !important;
+  font-size: 1rem !important;
+  letter-spacing: 1px;
+  border: none !important;
+  text-shadow: none !important;
+  padding: none !important;
+  &:hover {
+    background-color: $hover !important;
+  }
+}
+// ------------------------------------------------
 .sticky {
-	display: block;
+  display: block;
 }
-
 .hentry {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 }
-
-.updated:not(.published){
-	display: none;
+.updated:not(.published) {
+  display: none;
 }
-
 .single .byline,
 .group-blog .byline {
-	display: inline;
+  display: inline;
 }
-
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+  margin: $base__space-unit 0 0;
 }
-
 .page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
+  clear: both;
+  margin: 0 0 $base__space-unit;
 }
-
 /* Asides */
-
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
-}
-
+// .blog .format-aside,
+// .archive .format-aside{
+// 	display: none;
+// }
 /* Comments */
-
 .comment-content a {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 .bypostauthor {
-	display: block;
+  display: block;
 }

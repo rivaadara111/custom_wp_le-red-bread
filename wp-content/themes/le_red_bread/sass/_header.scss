@@ -19,16 +19,14 @@ $lightgrey: #e1e1e1;
   img{
   width: 300px;
   padding-left: 1rem;
-  margin-right: 30%;
+  margin-right: 52vw;
   }
 }
 
 .social ul {
   display: flex;
   flex-direction: row;
-  margin-right: 19vw;
   margin-top: 6vh;
-  margin-left: 57%;
   li{
     list-style-type: none;
     padding: 5px;
@@ -88,7 +86,7 @@ li {
 
   a {
     text-decoration: none;
-    color: grey;
+    color: $mediumgrey;
     font-weight: 600;
   &:hover{
     color: black;
@@ -98,8 +96,4 @@ li {
     }
   }
 }
-}
-
-.entry-title{
-  display: none;
 }

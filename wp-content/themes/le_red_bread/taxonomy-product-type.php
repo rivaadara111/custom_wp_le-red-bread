@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying product taxonomy pages.
  *
  * @package RED_Starter_Theme
  */
@@ -9,7 +9,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-	<div id="blog-page">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -36,7 +35,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-		</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

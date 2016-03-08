@@ -64,7 +64,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .site-branding img {
     width: 300px;
     padding-left: 1rem;
-    margin-right: 30%; }
+    margin-right: 52vw; }
 
 .social ul {
   display: -webkit-flex;
@@ -73,9 +73,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-right: 19vw;
-  margin-top: 6vh;
-  margin-left: 57%; }
+  margin-top: 6vh; }
   .social ul li {
     list-style-type: none;
     padding: 5px; }
@@ -128,15 +126,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     line-height: 1.2rem; }
     .main-navigation li a {
       text-decoration: none;
-      color: grey;
+      color: #808080;
       font-weight: 600; }
       .main-navigation li a:hover {
         color: black; }
       .main-navigation li a:active {
         border-bottom: 4px solid #db272a; }
-
-.entry-title {
-  display: none; }
 
 html {
   font-family: sans-serif;
@@ -749,12 +744,17 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-/* Posts and pages */
+/* General Posts and pages */
 .site-content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: .5rem .5rem 0 .5rem; }
+  padding: 0 0.5rem; }
+
+.blog-page {
+  margin-left: 7vw; }
+  .blog-page #main p {
+    width: 90%; }
 
 .entry-content,
 .entry-header {
@@ -763,13 +763,134 @@ a {
 .entry-header {
   color: #808080; }
 
+.entry-title {
+  color: #db272a;
+  font-family: "overlock";
+  font-size: 1.75rem; }
+
 #primary.content-area {
-  width: 70vw; }
+  width: 70vw;
+  margin-top: 2rem;
+  margin-left: 7vw; }
+
+#post-25 h1 {
+  display: none; }
+
+header.page-header {
+  display: none; }
+
+.product-header {
+  width: 100vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem; }
+  .product-header h1 {
+    font-family: "overlock";
+    text-transform: uppercase;
+    font-size: 2rem; }
+  .product-header p {
+    font-family: "open_sans"; }
+
+.horizontal-rule {
+  border: none;
+  color: #e1e1e1;
+  margin: 0 auto 3rem;
+  max-width: 320px;
+  padding: 0;
+  position: relative;
+  width: 50%; }
+  .horizontal-rule:after {
+    background: 0 0;
+    color: #e1e1e1;
+    content: '\f111';
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 14px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.flex-product-type {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.product-box {
+  margin: 0 2rem 2rem 2rem; }
+  .product-box:hover {
+    cursor: pointer; }
+  .product-box img {
+    width: 135px;
+    height: 100px; }
+  .product-box h3 {
+    font-family: "overlock";
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #400c0d; }
+  .product-box:hover {
+    text-decoration: underline; }
+
+.product-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 0 2rem 4rem; }
+
+.product-square {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  font-family: "open_sans";
+  font-size: 0.9rem;
+  margin: 0;
+  border: 1px solid #e1e1e1; }
+  .product-square .wp-post-image {
+    height: 250px;
+    width: 250px; }
+
+.product-data {
+  padding: 0.5rem; }
+  .product-data span {
+    float: right; }
 
 #post-13 {
-  margin-left: 9vw;
-  margin-right: .5rem; }
-  #post-13 h2, #post-13 h3 {
+  margin-right: 1rem; }
+  #post-13 h1 {
+    display: none; }
+  #post-13 h2,
+  #post-13 h3 {
     font-family: "overlock";
     text-transform: uppercase;
     font-size: 2rem; }
@@ -777,6 +898,21 @@ a {
     color: #808080;
     text-transform: none;
     font-size: 1.8rem; }
+
+.wpcf7-submit {
+  height: 40px;
+  width: 100px;
+  background-color: #db272a !important;
+  color: white !important;
+  box-shadow: none !important;
+  font-family: "open_sans" !important;
+  font-size: 1rem !important;
+  letter-spacing: 1px;
+  border: none !important;
+  text-shadow: none !important;
+  padding: none !important; }
+  .wpcf7-submit:hover {
+    background-color: #400c0d !important; }
 
 .sticky {
   display: block; }
@@ -801,10 +937,6 @@ a {
   margin: 0 0 1.5em; }
 
 /* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
@@ -902,9 +1034,9 @@ object {
     line-height: 1rem;
     font-family: "overlock"; }
   .footer-blocks-item p {
-    line-height: .6rem;
     font-family: "open_sans";
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: 1.3rem !important; }
     .footer-blocks-item p a {
       text-decoration: none;
       color: white; }
