@@ -65,23 +65,3 @@ get_header(); ?>
 
 
 <?php get_footer(); ?>
-
-
-<!-- <section class="product-type-blocks-container">
-	<div="product-type-block">
-		<img href="./images/bread.png">
-		<p> bread </p>
-	</div>
-	<div="product-type-block">
-		<img href="./images/coffee.png">
-		<p> coffee </p>
-	</div>
-	<div="product-type-block">
-		<img href="./images/pretzels.png">
-		<p> pretzels</p>
-	</div>
-	<div="product-type-block">
-		<img href="./images/sweets.png">
-		<p> sweets </p>
-	</div>
-</section> -->

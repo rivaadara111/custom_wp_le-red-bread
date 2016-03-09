@@ -89,7 +89,7 @@ header.page-header {
   }
   img {
     width: 135px;
-    height: 100px;
+    height: 90px;
   }
   h3 {
     font-family: $titles;
@@ -130,6 +130,50 @@ header.page-header {
   span {
     float: right;
   }
+}
+
+//product type pages
+.product-type-header{
+  h1.page-title{
+  text-transform: uppercase;
+  color:black;
+  font-size: 2rem;
+  font-family: $titles;
+  }
+  p{
+    width: 90%;
+    font-family: $main;
+  }
+}
+
+.product-menu-item{
+  display: flex;
+  border-top: 1px dashed $mediumgrey;
+  align-items: center;
+  img{
+   width: 175px;
+   height: 150px;
+  padding-right: 1rem;
+   }
+  p{
+ font-family: $main;
+  }
+  span{
+  font-family: $main;
+  }
+}
+
+//individual product pages
+
+.individual-products{
+ h1.entry-title{
+  text-transform: uppercase;
+  color:black;
+  font-size: 2rem;
+}
+p{
+  width: 80%
+}
 }
 // Contact Page -----------------------------------
 #post-13 {
