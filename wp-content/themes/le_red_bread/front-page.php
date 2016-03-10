@@ -7,24 +7,28 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-
+	<div id="frontpage" class="front-content-area">
+		<main id="fontpage" class="frontsite-main" role="main">
+    <div class="banner">
+    <h1>baked to perfection.</h1>
+    </div>
   <br>
 <!-- displaying the product types dynamically todo: flexbox this shiet! -->
+
   <?php
     $terms = get_terms( 'product-type');
   ?>
+
+<div class="flex-product-type-home">
   <?php if (! empty($terms) ) : ?>
   <?php foreach ($terms as $term) : ?>
+  <div class="product-box-home">
     <img src="<?php echo get_template_directory_uri()."/images\/".$term->slug; ?>.png" alt="product types" />
     <h3><?php echo $term->name; ?></h3>
-    <p><?php echo $term->description; ?> <a href='<?php echo get_term_link($term); ?>'>See More...</a>
-  </p>
-
+    <p><?php echo $term->description; ?> <a href='<?php echo get_term_link($term); ?>'>See More...</a></p>
+  </div>
   <?php endforeach; ?>
-
+</div>
   <?php endif; ?>
 
   <br>
@@ -49,5 +53,5 @@ get_header(); ?>
 
 
 		</main><!-- #main -->
-	</div><!-- #primary -->>
+	</div><!-- #primary -->
 <?php get_footer(); ?>

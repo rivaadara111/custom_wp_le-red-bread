@@ -3,3 +3,53 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.banner {
+background: url(../../images/hero-bread.jpg) center top no-repeat;
+height: 500px;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: cover;
+}
+
+h1{
+font-size: 6rem;
+font-family: $titles;
+text-align: center;
+color:white;
+text-transform: uppercase;
+}
+
+//product type row
+.flex-product-type-home {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.product-box-home {
+  margin: 0 1rem 2rem 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    width: 170px;
+    height: 110px;
+    margin-left: 1.5rem;
+  }
+  h3 {
+    font-family: $titles;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: $hover;
+  }
+  p {
+  font-family: $main;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}

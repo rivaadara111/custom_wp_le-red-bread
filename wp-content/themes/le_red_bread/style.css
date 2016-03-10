@@ -896,6 +896,8 @@ header.page-header {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row; }
+  .flex-product-type .home {
+    width: 90%; }
 
 .product-box {
   margin: 0 2rem 2rem 2rem; }
@@ -903,7 +905,8 @@ header.page-header {
     cursor: pointer; }
   .product-box img {
     width: 135px;
-    height: 90px; }
+    height: 90px;
+    margin: 0 auto; }
   .product-box h3 {
     font-family: "overlock";
     text-align: center;
@@ -1114,6 +1117,58 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.banner {
+  background: url(../../images/hero-bread.jpg) center top no-repeat;
+  height: 500px;
+  width: 100vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover; }
+
+h1 {
+  font-size: 6rem;
+  font-family: "overlock";
+  text-align: center;
+  color: white;
+  text-transform: uppercase; }
+
+.flex-product-type-home {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 2rem; }
+
+.product-box-home {
+  margin: 0 1rem 2rem 1rem; }
+  .product-box-home:hover {
+    cursor: pointer; }
+  .product-box-home img {
+    width: 170px;
+    height: 110px;
+    margin-left: 1.5rem; }
+  .product-box-home h3 {
+    font-family: "overlock";
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #400c0d; }
+  .product-box-home p {
+    font-family: "open_sans"; }
+  .product-box-home:hover {
+    text-decoration: underline; }
+
 .site-footer {
   width: 100%;
   background-color: #222222; }

@@ -2,6 +2,7 @@
 # Content
 --------------------------------------------------------------*/
 /* General Posts and pages */
+
 // Blog Page -----------------------------------
 .site-content {
   display: flex;
@@ -161,6 +162,9 @@ header.page-header {
 .flex-product-type {
   display: flex;
   flex-direction: row;
+  .home{
+  width: 90%;
+  }
 }
 .product-box {
   margin: 0 2rem 2rem 2rem;
@@ -170,6 +174,7 @@ header.page-header {
   img {
     width: 135px;
     height: 90px;
+    margin: 0 auto;
   }
   h3 {
     font-family: $titles;
