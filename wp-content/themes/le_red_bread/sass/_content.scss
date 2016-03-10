@@ -5,14 +5,17 @@
 // Blog Page -----------------------------------
 .site-content {
   display: flex;
-  padding: 0 0.5rem;
+  justify-content: center;
+  padding: 0 0 .5rem;
 }
 .blog-page {
   margin-left: 7vw;
-  #main p {
-    width: 90%;
-  }
 }
+
+.entry-content p {
+  width: 90%;
+}
+
 .entry-content,
 .entry-header {
   font-family: $main;
@@ -24,16 +27,90 @@
   color: $brandred;
   font-family: $titles;
   font-size: 1.75rem;
+  width: 90%;
 }
 #primary.content-area {
-  width: 70vw;
-  margin-top: 2rem;
-  margin-left: 7vw;
+  width: 60vw;
+  margin: 2rem 5rem 3rem 6rem;
+}
+
+.entry-footer,
+.post-navigation,
+.comments-area {
+font-family: $main;
+
 }
 // Home Page -----------------------------------
 #post-25 h1 {
   display: none;
 }
+
+//about page---------------------------------------
+
+#about-primary{
+  width: 1024px;
+}
+
+.about-container{
+  width: 100%;
+  padding:0;
+p {
+  font-family: $main;
+  }
+h2{
+  font-family: $titles;
+  font-size: 1.75rem;
+  text-align: center;
+  }
+}
+
+.about-title{
+  text-align: center;
+  margin-top: 3rem;
+ h1 {
+  font-family: $titles;
+  font-weight: bold;
+  font-size: 2rem;
+  }
+}
+
+.about-columns{
+  display: flex;
+  justify-content: space-between;
+  .copy {
+    flex: 0 1 47.5%;
+  }
+  img{
+    height: 484px;
+    width: auto;
+  }
+  h3 {
+    font-family: $titles;
+    font-size: 1.75rem;
+    color: $hover;
+    margin:0;
+  }
+  .caption{
+    color: $mediumgrey;
+    margin: 0;
+    }
+}
+
+.contact-box {
+  height: 90px;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  padding: .5rem .5rem .5rem 3rem;
+  margin: 5rem 0 4rem 0;
+  width: 100%;
+  span {
+  margin-right: 5rem;
+}
+  }
+
+
+
+
 //product page  -----------------------------------
 header.page-header {
   display: none;
@@ -75,6 +152,9 @@ header.page-header {
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
   }
+  .blog {
+  margin: 0 auto;
+}
 }
 
 //product type row
@@ -146,9 +226,13 @@ header.page-header {
   }
 }
 
+.taxonomy-description{
+  border-bottom: 1px dashed lighten($mediumgrey, 30%);
+}
+
 .product-menu-item{
   display: flex;
-  border-top: 1px dashed $mediumgrey;
+  border-bottom: 1px dashed lighten($mediumgrey, 30%);
   align-items: center;
   img{
    width: 175px;
@@ -170,10 +254,10 @@ header.page-header {
   text-transform: uppercase;
   color:black;
   font-size: 2rem;
-}
-p{
-  width: 80%
-}
+  }
+  p{
+    width: 80%;
+  }
 }
 // Contact Page -----------------------------------
 #post-13 {
@@ -193,10 +277,10 @@ p{
     font-size: 1.8rem;
   }
 }
-.wpcf7-submit {
+.wpcf7-submit, .submit-button, input#submit.submit {
   height: 40px;
-  width: 100px;
-  background-color: $brandred !important;
+  width: 130px;
+  background-color: $hover !important;
   color: white !important;
   box-shadow: none !important;
   font-family: $main !important;
@@ -204,9 +288,10 @@ p{
   letter-spacing: 1px;
   border: none !important;
   text-shadow: none !important;
-  padding: none !important;
+  padding: 0 0 .1rem 0 !important;
   &:hover {
-    background-color: $hover !important;
+    background-color: lighten($hover, 10%) !important;
+    text-decoration: underline;
   }
 }
 // ------------------------------------------------

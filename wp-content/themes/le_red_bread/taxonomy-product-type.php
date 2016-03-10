@@ -19,9 +19,8 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header>
-
+<!-- start the loop -->
 			<div class="product-types">
-						 <?php /* Start the Loop */ ?>
 						 <?php while ( have_posts() ) : the_post(); ?>
 
 						<div class="product-menu-item">

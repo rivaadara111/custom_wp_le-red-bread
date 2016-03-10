@@ -14,6 +14,7 @@ get_header(); ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
     	<header class="entry-header">
       		<?php if ( has_post_thumbnail() ) : ?>
       			<?php the_post_thumbnail( 'large' ); ?>

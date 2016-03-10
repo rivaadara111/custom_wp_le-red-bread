@@ -33,7 +33,7 @@ get_header(); ?>
     $args = array( 'post_type' => 'post', 'numberposts' => 4 );
     $latest_posts = get_posts( $args );
   ?>
-
+<a href="<?php echo get_term_link($term);?>"></a> <!-- to get product type to link to product type pages-->
 <!-- this is the loop for dynamically populating the latest blog posts to display on the front page (not hardcoded in!) -->
   <?php  foreach( $latest_posts as $post ) : setup_postdata($post);?>
 
@@ -49,6 +49,5 @@ get_header(); ?>
 
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
-
+	</div><!-- #primary -->>
 <?php get_footer(); ?>

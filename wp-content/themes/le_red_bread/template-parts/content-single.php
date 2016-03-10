@@ -28,6 +28,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+ <hr class="horizontal-rule blog"></hr>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

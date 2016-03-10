@@ -5,7 +5,7 @@
 
 #secondary {
   width: 30vw;
-	padding: 2rem;
+	padding: 2rem 2rem 2rem 3rem;
 	border-left: 1px solid $lightgrey;
 }
 
@@ -16,17 +16,18 @@
 	font-family: $titles;
 }
 
-.textwidget{
+.bizhours, .textwidget{
 	font-family: $main;
   line-height: 1.6rem;
-  p{
-    margin-bottom: .7rem;
-  }
-  b {
+  span {
   color: $brandred;
   }
 }
 
+p.bizhours{
+margin-bottom: 0rem;
+margin-top: 0rem;
+}
 ul{
   list-style: none;
   margin: 0;
@@ -51,7 +52,6 @@ color:$brandred;
   font-size: .7rem;
   line-height: 1.6rem;
   .fa-map-marker{
-  // margin-bottom: 15px;
   }
 }
 

@@ -38,23 +38,29 @@ get_header(); ?>
 				<?php endif; ?>
 		</header>
 
+<!--PRODUCT GRID--------------->
 			<?php /* Start the Loop */ ?>
 			<div class="product-grid">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<!-- CREATE A PRODUCT SQUARE -->
+
 			<div class="product-square">
-      <?php if ( has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail( 'original' ); ?>
-      <?php endif; ?>
+	<a href="<?php echo the_permalink($product);?>">
+	      <?php if ( has_post_thumbnail() ) : ?>
+	        <?php the_post_thumbnail( 'original' ); ?>
+	      <?php endif; ?>
+</a>
 			<div class="product-data">
-      <?php the_title(); ?>
-      <span><?php echo CFS()->get( 'price' ); ?>
-			</span></div>
+      	<?php the_title(); ?>
+      <span>
+				<?php echo CFS()->get( 'price' ); ?>
+			</span>
 			</div>
-			<?php endwhile; ?>
 			</div>
-			<?php the_posts_navigation(); ?>
+
+				<?php endwhile; ?>
+			</div>
+				<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 

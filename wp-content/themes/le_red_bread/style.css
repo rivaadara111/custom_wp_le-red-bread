@@ -694,7 +694,7 @@ a {
 --------------------------------------------------------------*/
 #secondary {
   width: 30vw;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 3rem;
   border-left: 1px solid #e1e1e1; }
 
 .widget-title {
@@ -703,13 +703,15 @@ a {
   color: black;
   font-family: "overlock"; }
 
-.textwidget {
+.bizhours, .textwidget {
   font-family: "open_sans";
   line-height: 1.6rem; }
-  .textwidget p {
-    margin-bottom: .7rem; }
-  .textwidget b {
+  .bizhours span, .textwidget span {
     color: #db272a; }
+
+p.bizhours {
+  margin-bottom: 0rem;
+  margin-top: 0rem; }
 
 ul {
   list-style: none;
@@ -749,12 +751,16 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0.5rem; }
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 .5rem; }
 
 .blog-page {
   margin-left: 7vw; }
-  .blog-page #main p {
-    width: 90%; }
+
+.entry-content p {
+  width: 90%; }
 
 .entry-content,
 .entry-header {
@@ -766,15 +772,74 @@ a {
 .entry-title {
   color: #db272a;
   font-family: "overlock";
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  width: 90%; }
 
 #primary.content-area {
-  width: 70vw;
-  margin-top: 2rem;
-  margin-left: 7vw; }
+  width: 60vw;
+  margin: 2rem 5rem 3rem 6rem; }
+
+.entry-footer,
+.post-navigation,
+.comments-area {
+  font-family: "open_sans"; }
 
 #post-25 h1 {
   display: none; }
+
+#about-primary {
+  width: 1024px; }
+
+.about-container {
+  width: 100%;
+  padding: 0; }
+  .about-container p {
+    font-family: "open_sans"; }
+  .about-container h2 {
+    font-family: "overlock";
+    font-size: 1.75rem;
+    text-align: center; }
+
+.about-title {
+  text-align: center;
+  margin-top: 3rem; }
+  .about-title h1 {
+    font-family: "overlock";
+    font-weight: bold;
+    font-size: 2rem; }
+
+.about-columns {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .about-columns .copy {
+    -webkit-flex: 0 1 47.5%;
+        -ms-flex: 0 1 47.5%;
+            flex: 0 1 47.5%; }
+  .about-columns img {
+    height: 484px;
+    width: auto; }
+  .about-columns h3 {
+    font-family: "overlock";
+    font-size: 1.75rem;
+    color: #400c0d;
+    margin: 0; }
+  .about-columns .caption {
+    color: #808080;
+    margin: 0; }
+
+.contact-box {
+  height: 90px;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  padding: .5rem .5rem .5rem 3rem;
+  margin: 5rem 0 4rem 0;
+  width: 100%; }
+  .contact-box span {
+    margin-right: 5rem; }
 
 header.page-header {
   display: none; }
@@ -821,6 +886,8 @@ header.page-header {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+  .horizontal-rule .blog {
+    margin: 0 auto; }
 
 .flex-product-type {
   display: -webkit-flex;
@@ -895,11 +962,14 @@ header.page-header {
   width: 90%;
   font-family: "open_sans"; }
 
+.taxonomy-description {
+  border-bottom: 1px dashed #cdcdcd; }
+
 .product-menu-item {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border-top: 1px dashed #808080;
+  border-bottom: 1px dashed #cdcdcd;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -934,10 +1004,10 @@ header.page-header {
     text-transform: none;
     font-size: 1.8rem; }
 
-.wpcf7-submit {
+.wpcf7-submit, .submit-button, input#submit.submit {
   height: 40px;
-  width: 100px;
-  background-color: #db272a !important;
+  width: 130px;
+  background-color: #400c0d !important;
   color: white !important;
   box-shadow: none !important;
   font-family: "open_sans" !important;
@@ -945,9 +1015,10 @@ header.page-header {
   letter-spacing: 1px;
   border: none !important;
   text-shadow: none !important;
-  padding: none !important; }
-  .wpcf7-submit:hover {
-    background-color: #400c0d !important; }
+  padding: 0 0 .1rem 0 !important; }
+  .wpcf7-submit:hover, .submit-button:hover, input#submit.submit:hover {
+    background-color: #6b1416 !important;
+    text-decoration: underline; }
 
 .sticky {
   display: block; }
