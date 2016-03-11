@@ -759,9 +759,6 @@ a {
 .blog-page {
   margin-left: 7vw; }
 
-.entry-content p {
-  width: 90%; }
-
 .entry-content,
 .entry-header {
   font-family: "open_sans"; }
@@ -770,10 +767,10 @@ a {
   color: #808080; }
 
 .entry-title {
-  color: #db272a;
+  color: black;
   font-family: "overlock";
-  font-size: 1.75rem;
-  width: 90%; }
+  font-size: 2rem;
+  text-align: left; }
 
 #primary.content-area {
   width: 60vw;
@@ -806,7 +803,8 @@ a {
   .about-title h1 {
     font-family: "overlock";
     font-weight: bold;
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-color: black; }
 
 .about-columns {
   display: -webkit-flex;
@@ -1007,7 +1005,7 @@ header.page-header {
     text-transform: none;
     font-size: 1.8rem; }
 
-.wpcf7-submit, .submit-button, input#submit.submit {
+.wpcf7-submit, .submit-button, input#submit.submit, button {
   height: 40px;
   width: 130px;
   background-color: #400c0d !important;
@@ -1019,7 +1017,7 @@ header.page-header {
   border: none !important;
   text-shadow: none !important;
   padding: 0 0 .1rem 0 !important; }
-  .wpcf7-submit:hover, .submit-button:hover, input#submit.submit:hover {
+  .wpcf7-submit:hover, .submit-button:hover, input#submit.submit:hover, button:hover {
     background-color: #6b1416 !important;
     text-decoration: underline; }
 
@@ -1131,13 +1129,12 @@ object {
       -ms-flex-align: center;
           align-items: center;
   background-size: cover; }
-
-h1 {
-  font-size: 6rem;
-  font-family: "overlock";
-  text-align: center;
-  color: white;
-  text-transform: uppercase; }
+  .banner h1 {
+    font-size: 6rem;
+    font-family: "overlock";
+    text-align: center;
+    color: white;
+    text-transform: uppercase; }
 
 .flex-product-type-home {
   display: -webkit-flex;
@@ -1152,8 +1149,6 @@ h1 {
 
 .product-box-home {
   margin: 0 1rem 2rem 1rem; }
-  .product-box-home:hover {
-    cursor: pointer; }
   .product-box-home img {
     width: 170px;
     height: 110px;
@@ -1166,8 +1161,79 @@ h1 {
     color: #400c0d; }
   .product-box-home p {
     font-family: "open_sans"; }
-  .product-box-home:hover {
-    text-decoration: underline; }
+
+.see-products-box {
+  height: 90px;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  padding: 1rem .5rem .5rem 3rem;
+  margin: 0 auto 2rem;
+  width: 80vw; }
+  .see-products-box span {
+    margin: 2rem 3rem 0 0;
+    font-family: "open_sans"; }
+  .see-products-box button {
+    margin: auto 0; }
+
+.latest-news {
+  height: 700px;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  width: 100%; }
+  .latest-news h2 {
+    font-family: "overlock";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem; }
+
+.blog-post-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+  box-shadow: 0 0 3px rgba(100, 100, 100, 0.25); }
+
+.blog-post {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  font-family: "open_sans";
+  font-size: 0.9rem;
+  margin: 0;
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  -webkit-flex: 1 0 25%;
+  -ms-flex: 1 0 25%;
+  flex: 1 0 25%;
+  max-width: 25%; }
+  .blog-post img {
+    height: 200px;
+    max-width: 100%; }
+  .blog-post h3 {
+    padding: .5rem .5rem 0 .5rem;
+    margin: 0;
+    overflow: hidden;
+    font-family: "open_sans";
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .blog-post h3 a {
+      color: #808080; }
+      .blog-post h3 a:hover {
+        color: #db272a; }
+  .blog-post .entry-meta {
+    color: #9a9a9a;
+    padding: 0 .5rem .5rem .5rem; }
 
 .site-footer {
   width: 100%;

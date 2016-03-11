@@ -12,9 +12,9 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
+<div id="single-blog-post-title">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+	</div>
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->

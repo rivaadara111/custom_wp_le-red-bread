@@ -11,14 +11,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-size: cover;
-}
-
-h1{
-font-size: 6rem;
-font-family: $titles;
-text-align: center;
-color:white;
-text-transform: uppercase;
+  h1{
+  font-size: 6rem;
+  font-family: $titles;
+  text-align: center;
+  color:white;
+  text-transform: uppercase;
+  }
 }
 
 //product type row
@@ -31,9 +30,6 @@ text-transform: uppercase;
 }
 .product-box-home {
   margin: 0 1rem 2rem 1rem;
-  &:hover {
-    cursor: pointer;
-  }
   img {
     width: 170px;
     height: 110px;
@@ -49,7 +45,84 @@ text-transform: uppercase;
   p {
   font-family: $main;
   }
-  &:hover {
-    text-decoration: underline;
+}
+//see products box
+
+.see-products-box {
+  height: 90px;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  padding: 1rem .5rem .5rem 3rem;
+  margin: 0 auto 2rem;
+  width: 80vw;
+  span {
+    margin:2rem 3rem 0 0;
+    // margin-top: 50px !important;
+    font-family: $main;
+  }
+  button {
+    margin: auto 0;
+    // margin-bottom: 3rem !important;
+  }
+}
+
+//latest news block
+
+.latest-news{
+  height: 700px;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  width:100%;
+  h2{
+    font-family: $titles;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+.blog-post-container {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+  box-shadow: 0 0 3px rgba(100,100,100,.25);
+}
+
+.blog-post{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: $main;
+  font-size: 0.9rem;
+  margin: 0;
+  border: 1px solid $lightgrey;
+  overflow: hidden;
+  -webkit-flex: 1 0 25%;
+  -ms-flex: 1 0 25%;
+  flex: 1 0 25%;
+  max-width: 25%;
+  img{
+    height: 200px;
+    max-width: 100%;
+  }
+  h3 {
+    padding:.5rem .5rem 0 .5rem;
+    margin: 0;
+    overflow: hidden;
+    font-family: $main;
+text-overflow: ellipsis;
+    white-space: nowrap;
+    a {
+      color: $mediumgrey;
+      &:hover{
+      color: $brandred;
+      }
+    }
+  }
+  .entry-meta {
+    color: lighten($mediumgrey, 10%);
+padding: 0 .5rem .5rem .5rem;
   }
 }

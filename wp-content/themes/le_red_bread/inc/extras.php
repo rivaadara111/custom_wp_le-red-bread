@@ -61,6 +61,7 @@ function lrb_login_logo() {
   }
 add_action( 'login_head', 'lrb_login_logo' );
 
+//get titles to show no taxonomy title
 function lrb_archive_title( $title ) {
     if ( is_post_type_archive( array( 'product') ) ) {
         $title = 'Our Products Are Made Fresh Daily';

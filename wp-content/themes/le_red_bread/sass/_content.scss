@@ -14,7 +14,6 @@
 }
 
 .entry-content p {
-  width: 90%;
 }
 
 .entry-content,
@@ -24,11 +23,17 @@
 .entry-header {
   color: $mediumgrey;
 }
+// .entry-title{
+//   color: $brandred;
+//   font-family: $titles;
+//   font-size: 1.75rem;
+// }
+
 .entry-title {
-  color: $brandred;
+  color: black;
   font-family: $titles;
-  font-size: 1.75rem;
-  width: 90%;
+  font-size: 2rem;
+  text-align:left;
 }
 #primary.content-area {
   width: 60vw;
@@ -72,6 +77,7 @@ h2{
   font-family: $titles;
   font-weight: bold;
   font-size: 2rem;
+  font-color: black;
   }
 }
 
@@ -108,9 +114,6 @@ h2{
   margin-right: 5rem;
 }
   }
-
-
-
 
 //product page  -----------------------------------
 header.page-header {
@@ -282,7 +285,7 @@ header.page-header {
     font-size: 1.8rem;
   }
 }
-.wpcf7-submit, .submit-button, input#submit.submit {
+.wpcf7-submit, .submit-button, input#submit.submit, button {
   height: 40px;
   width: 130px;
   background-color: $hover !important;

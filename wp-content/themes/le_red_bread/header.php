@@ -59,7 +59,7 @@
 	  	<div class ="search-bar">
 	        <label class="screen-reader-text" for="s">' . __('Search for:') . '</label>
 	        <input type="text" value="" placeholder="SEARCH ..." name="s" id="s" />
-<div class="searchicon"><i class="fa fa-search"></i></div>
+					<div class="searchicon"><i class="fa fa-search"></i></div>
 
 	    </div>
 	</form>
