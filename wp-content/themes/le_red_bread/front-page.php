@@ -36,8 +36,8 @@ get_header(); ?>
   <div class="see-products-box">
     <p>
       <span>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</span>
-      <a href="<?php the_permalink($products)?>"><button type="submit" name="see-products-button">See Our Products</button></a>
-    </p>
+      <a href="<?php get_page_by_title('Products')?>"><button name="see-products-button">See Our Products</button></a>
+  </p>    <!-- //above link is not working!!!!!!!!!!-->
   </div>
   <br>
 
@@ -65,10 +65,68 @@ get_header(); ?>
     </div>
     <?php endforeach; wp_reset_postdata(); ?>
     </div>
+  </div>   <!--  end latest news div -->
+
+  <div class="reviews-section">
+    <h3>what others say about us</h3>
+    <hr class="horizontal-rule"></hr>
+      <div class="reviews-container">
+
+        <div class="review-block">
+          <img src="<?php bloginfo('template_directory'); ?>/images/testimonial-headshots/dr-dosist-headshot.png" alt="Dr. Dosist Headshot" />
+          <div class="review-text">
+            <p class="testimonial">
+              Healthy food be damned! If you are a bakery and sweet addict like myself this place is life changing. So many goodies. Have a cheat day and eat all the pretzels!
+            </p>
+            <p>
+              <span>Dr. Doist</span><br>
+              Nutritionist - <a href="http://www.redacademy.com">Health Time Clinic</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="review-block">
+          <img src="<?php bloginfo('template_directory'); ?>/images/testimonial-headshots/maxi-milli-headshot.png" alt="Maxi Milli Headshot" />
+          <div class="review-text">
+            <p class="testimonial">
+            Do you like bread? Seriously, who doesn’t? You have to check Le Red Bread’s lovely loaves. Fresh flavours every day…need I say more?
+            </p>
+            <p>
+              <span>Maxi Milli</span><br>
+              Chef - <a href="http://www.redacademy.com">Sailor Spoon</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="review-block">
+          <img src="<?php bloginfo('template_directory'); ?>/images/testimonial-headshots/ana-vandana-headshot.png" alt="Anna Vandana Headshot" />
+          <div class="review-text">
+            <p class="testimonial">
+              Excellent cookies! They always have unique flavours and the cookies are always super fresh. Make sure you get them before they sell out! And keep an eye out on holidays, the flavour combinations they come up with are brilliant. Delicious!
+            </p>
+            <p>
+              <span>Anna Vandana</span><br>
+              Author - <a href="http://www.redacademy.com">Food is Great Magazine</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="review-block">
+          <img src="<?php bloginfo('template_directory'); ?>/images/testimonial-headshots/martha-m-masters-headshot.png" alt="Martha M. Masters Headshot" />
+          <div class="review-text">
+            <p class="testimonial">
+              Where has this bakery been all my life! I absolutely love their cookies and muffins. Nom nom.
+            </p>
+            <p>
+              <span>Martha M. Masters</span><br>
+              Food Critic - <a href="http://www.redacademy.com">WikiTravel</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
   </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
-
-  <!-- <a href="<?php echo get_term_link($term);?>"></a> to get product type to link to product type pages--> -->

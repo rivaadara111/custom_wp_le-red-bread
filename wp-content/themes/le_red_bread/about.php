@@ -44,7 +44,7 @@ get_header(); ?>
     <div class="contact-box">
       <p>
         <span>Feel free to contact us with any questions coments or suggestions. We even take custom orders!</span>
-        <a href="<?php the_permalink($contact)?>"><button type="submit" class="submit-button" name="submit-button">Contact Us</button></a>
+        <a href="<?php get_page_by_title('Contact')?>"><button type="submit" class="submit-button" name="submit-button">Contact Us</button></a>
       </p>
 
     </div>
