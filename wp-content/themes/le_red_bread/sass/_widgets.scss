@@ -2,6 +2,7 @@
 # Widgets
 --------------------------------------------------------------*/
 
+//sidebar-----------------------------
 
 #secondary {
   width: 30vw;
@@ -68,4 +69,17 @@ color:$brandred;
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+
+//comments block---------------------------
+
+
+.widget_categories .widget-title{
+  visibility:collapse;
+  display: none;
+}
+.widgettitle {
+  font-size: 1.75rem;
+  color: $mediumgrey;
+  font-family: $titles;
 }

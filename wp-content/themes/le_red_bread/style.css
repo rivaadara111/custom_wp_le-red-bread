@@ -124,14 +124,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     float: left;
     padding: 1rem;
     line-height: 1.2rem; }
+    .main-navigation li::after {
+      content: "";
+      background-color: #db272a;
+      display: block;
+      height: 3px;
+      margin-top: -3px;
+      width: 100%; }
     .main-navigation li a {
       text-decoration: none;
       color: #808080;
       font-weight: 600; }
       .main-navigation li a:hover {
-        color: black; }
-      .main-navigation li a:active {
-        border-bottom: 4px solid #db272a; }
+        color: #400c0d; }
 
 html {
   font-family: sans-serif;
@@ -743,6 +748,15 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget_categories .widget-title {
+  visibility: collapse;
+  display: none; }
+
+.widgettitle {
+  font-size: 1.75rem;
+  color: #808080;
+  font-family: "overlock"; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -770,7 +784,8 @@ a {
   color: black;
   font-family: "overlock";
   font-size: 2rem;
-  text-align: left; }
+  text-align: left;
+  margin: 0; }
 
 #primary.content-area {
   width: 60vw;
@@ -796,6 +811,9 @@ a {
     font-family: "overlock";
     font-size: 1.75rem;
     text-align: center; }
+
+#single-blog-post-title {
+  text-transform: uppercase; }
 
 .about-title {
   text-align: center;
@@ -1021,6 +1039,26 @@ header.page-header {
     background-color: #6b1416 !important;
     text-decoration: underline; }
 
+.wpcf7 b {
+  color: #db272a; }
+
+.search-submit {
+  width: 50px;
+  height: 41px;
+  margin: 1rem 0 0 0;
+  border: none;
+  border-radius: 3px;
+  background: #400c0d;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none; }
+  .search-submit .fa {
+    color: white;
+    margin-left: .6rem;
+    font-size: .9rem; }
+
 .sticky {
   display: block; }
 
@@ -1037,19 +1075,39 @@ header.page-header {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+  margin: 1.5em 0 3rem 0; }
 
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
 
-/* Asides */
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
 
 .bypostauthor {
   display: block; }
+
+.footer-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 60vw;
+  margin: 2rem 0 0 5.8rem;
+  font-family: "open_sans"; }
+  .footer-container fieldset {
+    padding: 0;
+    border: none;
+    margin: 0; }
+    .footer-container fieldset label {
+      font-weight: bold; }
+      .footer-container fieldset label .search-field {
+        padding: .5rem;
+        background: #fafafa;
+        line-height: 1.5rem; }
 
 /*--------------------------------------------------------------
 # Media

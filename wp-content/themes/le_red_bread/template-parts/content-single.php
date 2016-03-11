@@ -28,10 +28,13 @@
 				'after'  => '</div>',
 			) );
 		?>
- <hr class="horizontal-rule blog"></hr>
 	</div><!-- .entry-content -->
-
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer>
+<br>
+ <hr class="horizontal-rule blog"></hr>
+<!-- .entry-footer -->
+
+
 </article><!-- #post-## -->

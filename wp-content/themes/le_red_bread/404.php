@@ -9,8 +9,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="footer" class="footer-container">
+	<!-- <div id="footer-primary" class="footer-content-area"> -->
+		<!-- <main id="footer-main" class="site-main" role="main"> -->
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -18,7 +19,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
+					<p><?php echo esc_html( 'Oops! It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
 					<?php get_search_form(); ?>
 
@@ -49,7 +50,8 @@ get_header(); ?>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+		<!-- </main>< #main -->
+	<!-- </div> #primary -->
+	</div><!-- #footer-container -->
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

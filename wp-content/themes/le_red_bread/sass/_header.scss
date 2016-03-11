@@ -75,25 +75,29 @@ $lightgrey: #e1e1e1;
 
 .main-navigation{
   margin-left: 7.5%;
-li {
-  text-decoration: none;
-  font-family: $main;
-  border-left: 1px solid $lightgrey;
-  border-right: 1px solid $lightgrey;
-  float: left;
-  padding: 1rem;
-  line-height: 1.2rem;
-
-  a {
+  li {
     text-decoration: none;
-    color: $mediumgrey;
-    font-weight: 600;
-  &:hover{
-    color: black;
-    }
-    &:active{
-      border-bottom: 4px solid $brandred;
+    font-family: $main;
+    border-left: 1px solid $lightgrey;
+    border-right: 1px solid $lightgrey;
+    float: left;
+    padding: 1rem;
+    line-height: 1.2rem;
+  &::after{
+      content: "";
+      background-color: $brandred;
+      display: block;
+      height: 3px;
+      margin-top: -3px;
+      width: 100%;
+      }
+    a {
+      text-decoration: none;
+      color: $mediumgrey;
+      font-weight: 600;
+    &:hover{
+      color: $hover;
+      }
     }
   }
-}
 }
