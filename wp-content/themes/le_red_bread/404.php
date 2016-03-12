@@ -10,8 +10,6 @@
 get_header(); ?>
 
 <div id="footer" class="footer-container">
-	<!-- <div id="footer-primary" class="footer-content-area"> -->
-		<!-- <main id="footer-main" class="site-main" role="main"> -->
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -50,8 +48,6 @@ get_header(); ?>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
-		<!-- </main>< #main -->
-	<!-- </div> #primary -->
-	</div><!-- #footer-container -->
+</div><!-- #footer-container -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

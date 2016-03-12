@@ -199,6 +199,7 @@ header.page-header {
   width: 90vw;
   margin: 0 0 2rem 4rem;
 }
+
 .product-square {
   display: flex;
   flex-direction: column;
@@ -212,10 +213,21 @@ header.page-header {
     width: 250px;
   }
 }
+
 .product-data {
   padding: 0.5rem;
-  span {
-    float: right;
+  .product-title{
+    padding-right: .25rem;
+    float:left;
+    &::before{
+      float: right;
+      width:0;
+      content: "...................";
+    }
+  }
+  .price{
+    float:right;
+    padding-left: .25rem;
   }
 }
 
@@ -261,10 +273,22 @@ header.page-header {
   text-transform: uppercase;
   color:black;
   font-size: 2rem;
+  margin-bottom: 1rem;
   }
+  .entry-content{
+  font-size: 1.5rem;
+  font-family: $titles;
+  margin: .5rem 0 0 0;
+  color: black;
+  font-weight: bold;
+}
   p{
-    width: 80%;
+    width: 90%;
+    font-family: $main;
+    font-size: 1rem;
+    font-weight: normal;
   }
+
 }
 // Contact Page -----------------------------------
 #post-13 {
@@ -284,29 +308,56 @@ header.page-header {
     font-size: 1.8rem;
   }
 }
+
+.wpcf7{
+  .flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input{
+      width: 20rem;
+      margin-bottom: 0;
+    }
+  }
+  input, textarea {
+    background-color: #fafafa;
+    margin-top: .5rem;
+    border: 1px solid $lightgrey;
+  }
+  input{
+    height: 40px;
+    width: 100%;
+  }
+  p {
+    font-weight: bold;
+    color: $mediumgrey;
+  }
+  b {
+    color: $brandred;
+  }
+}
+
 .wpcf7-submit, .submit-button, input#submit.submit, button {
   height: 40px;
-  width: 130px;
+  width: 130px !important;
   background-color: $hover !important;
   color: white !important;
   box-shadow: none !important;
   font-family: $main !important;
   font-size: 1rem !important;
+  font-weight: normal;
   letter-spacing: 1px;
   border: none !important;
   text-shadow: none !important;
   padding: 0 0 .1rem 0 !important;
   &:hover {
     background-color: lighten($hover, 10%) !important;
-    text-decoration: underline;
   }
 }
-.wpcf7 b {
-  color: $brandred;
-  }
 
 .search-submit{
-  width: 50px;
+  width: 50px !important;
   height: 41px;
   margin: 1rem 0 0 0;
   border: none;
@@ -364,6 +415,33 @@ header.page-header {
   width: 60vw;
   margin: 2rem 0 0 5.8rem;
   font-family: $main;
+  fieldset{
+    padding: 0;
+    border: none;
+    margin: 0;
+    label {
+      font-weight: bold;
+      .search-field{
+        padding: .5rem;
+        background: #fafafa;
+        line-height: 1.5rem;
+        }
+      }
+  }
+}
+
+.search-results{
+  display: flex;
+  justify-content: flex-start;
+  width: 60vw;
+  margin-left: 4.2rem;
+  font-family: $main;
+  .entry-title{
+    text-transform: uppercase;
+    color:black;
+    font-size: 2rem;
+    font-family: $titles;
+}
   fieldset{
     padding: 0;
     border: none;

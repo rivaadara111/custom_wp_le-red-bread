@@ -19,7 +19,7 @@ $lightgrey: #e1e1e1;
   img{
   width: 300px;
   padding-left: 1rem;
-  margin-right: 52vw;
+  margin-right: 54vw;
   }
 }
 
@@ -43,15 +43,12 @@ $lightgrey: #e1e1e1;
 .search-bar{
   display: flex;
   justify-content: flex-end;
-  margin-right: 4.7rem;
-  padding: .7rem;
+  padding: .4rem 0 0 0;
+  margin-right: 4.3rem;
   input{
-    background-color: #fafafa;
     font-family: $main;
-  }
-#s {
-  border: none;
-  outline: none;
+    border: none;
+    outline: none;
   }
 }
 
@@ -61,16 +58,34 @@ $lightgrey: #e1e1e1;
 }
 
 #searchform {
-  background-color: #fafafa;
   height:52px;
   border-top:1px solid $lightgrey;
   border-bottom:1px solid $lightgrey;
+  box-shadow: 0 2px 3px 0 rgba(150,150,150,.25);
+  fieldset{
+    border: none;
+    padding: 0;
+  }
+  input{
+    border:none;
+  }
 }
 
-.fa-search{
-  font-size: 1.15rem;
-  padding-top: 4px;
-  color:$mediumgrey;
+button.search-bar-submit{
+  background-color: transparent !important;
+  width: auto !important;
+  .fa-search{
+    font-size: 1.15rem;
+    padding-top: 4px;
+    color:$mediumgrey;
+  }
+}
+
+ .main-navigation .current-menu-item {
+  box-shadow: inset 0 -3px  $brandred;
+  >a{
+    color: $hover;
+  }
 }
 
 .main-navigation{
@@ -83,14 +98,6 @@ $lightgrey: #e1e1e1;
     float: left;
     padding: 1rem;
     line-height: 1.2rem;
-  &::after{
-      content: "";
-      background-color: $brandred;
-      display: block;
-      height: 3px;
-      margin-top: -3px;
-      width: 100%;
-      }
     a {
       text-decoration: none;
       color: $mediumgrey;

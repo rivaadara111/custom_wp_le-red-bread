@@ -36,7 +36,7 @@ get_header(); ?>
   <div class="see-products-box">
     <p>
       <span>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</span>
-      <a href="<?php get_page_by_title('Products')?>"><button name="see-products-button">See Our Products</button></a>
+      <a href="<?php echo esc_url( home_url('/products') );?>"><button name="see-products-button">See Our Products</button></a>
   </p>    <!-- //above link is not working!!!!!!!!!!-->
   </div>
   <br>

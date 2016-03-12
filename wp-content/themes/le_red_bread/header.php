@@ -50,19 +50,16 @@
 				</div><!-- .site-branding -->
 
 
-		<form role="search" method="get" id="searchform" action="http://example.com/">
+		<form role="search" method="get" id="searchform">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
-
-	  	<div class ="search-bar">
-	        <label class="screen-reader-text" for="s">' . __('Search for:') . '</label>
-	        <input type="text" value="" placeholder="SEARCH ..." name="s" id="s" />
-					<div class="searchicon"><i class="fa fa-search"></i></div>
-
-	    </div>
+				<div class ="search-bar">
+						<?php get_search_form(); ?>
+			  </div>
 	</form>
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

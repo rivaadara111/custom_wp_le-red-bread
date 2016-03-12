@@ -45,16 +45,15 @@ get_header(); ?>
 
 
 			<div class="product-square">
-	<a href="<?php echo the_permalink($product);?>">
+			<a href="<?php echo the_permalink($product);?>">
 	      <?php if ( has_post_thumbnail() ) : ?>
 	        <?php the_post_thumbnail( 'original' ); ?>
 	      <?php endif; ?>
-</a>
+			</a>
+
 			<div class="product-data">
-      	<?php the_title(); ?>
-      <span>
-				<?php echo CFS()->get( 'price' ); ?>
-			</span>
+	      	<span class="product-title"><?php the_title(); ?></span>
+					<span class="price"><?php echo CFS()->get( 'price' ); ?></span>
 			</div>
 			</div>
 
