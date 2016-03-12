@@ -1439,6 +1439,21 @@ object {
     .reviews-container .review-text span {
       font-weight: bold; }
 
+/*Search page------------------- */
+h1.page-title {
+  font-family: "overlock";
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: black;
+  border-bottom: 1px dashed #808080;
+  padding-bottom: 1rem; }
+
+p {
+  font-family: "open_sans"; }
+
+.entry-summary {
+  font-family: "open_sans"; }
+
 .site-footer {
   width: 100%;
   background-color: #222222; }
