@@ -36,10 +36,32 @@
 .entry-footer,
 .post-navigation,
 .comments-area {
-font-family: $main;
-
+  font-family: $main;
 }
 
+.single-blog-post p a{
+  display: none;
+}
+
+.tags-links{
+  padding-left: 1rem;
+  }
+
+.comment-form-comment{
+  font-weight: bold;
+  color: $mediumgrey;
+  }
+
+h3#reply-title.comment-reply-title{
+  font-family: $titles;
+  color: $hover;
+  font-size: 1.5rem;
+
+}
+textarea#comment{
+  background-color: #fafafa;
+  margin-top: .5rem;
+  }
 
 // Home Page -----------------------------------
 #post-25 h1 {
@@ -67,6 +89,7 @@ h2{
 
 #single-blog-post-title{
   text-transform: uppercase;
+
 }
 
 .about-title{
