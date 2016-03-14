@@ -1,28 +1,24 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
 /* Front page------------------- */
-
 .banner {
-background: url(../../images/hero-bread.jpg) center top no-repeat;
-height: 500px;
-width: 100vw;
-display: flex;
-justify-content: center;
-align-items: center;
-background-size: cover;
-  h1{
-  font-size: 6rem;
-  font-family: $titles;
-  text-align: center;
-  color:white;
-  text-transform: uppercase;
+  background: url("../../images/hero-bread.jpg") center top no-repeat;
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  h1 {
+    font-size: 6rem;
+    font-family: $titles;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
   }
 }
-
 //product type row-------------------
-
 .flex-product-type-home {
   display: flex;
   flex-direction: row;
@@ -30,9 +26,8 @@ background-size: cover;
   margin: 0 auto;
   padding-top: 2rem;
 }
-
 .product-box-home {
-  margin: 0 1rem 2rem 1rem;
+  margin: 0 1rem 2rem;
   img {
     width: 170px;
     height: 110px;
@@ -46,22 +41,19 @@ background-size: cover;
     color: $hover;
   }
   p {
-  font-family: $main;
+    font-family: $main;
   }
 }
-
-
 //see products box-------------------
-
 .see-products-box {
   height: 90px;
   background-color: #fafafa;
   border: 1px solid #e1e1e1;
-  padding: .5rem .5rem .5rem 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
   margin: 0 auto 2rem;
   width: 80vw;
   span {
-    margin:2rem 2rem 0 0;
+    margin: 2rem 2rem 0 0;
     font-family: $main;
   }
   button {
@@ -70,15 +62,13 @@ background-size: cover;
     letter-spacing: normal;
   }
 }
-
 //latest news block-------------------
-
-.latest-news{
+.latest-news {
   height: 520px;
   background-color: #fafafa;
   border: 1px solid #e1e1e1;
-  width:100%;
-  h2{
+  width: 100%;
+  h2 {
     font-family: $titles;
     text-transform: uppercase;
     text-align: center;
@@ -86,7 +76,6 @@ background-size: cover;
     margin-top: 3rem;
   }
 }
-
 .blog-post-container {
   display: flex;
   flex-direction: row;
@@ -94,8 +83,7 @@ background-size: cover;
   margin: 0 auto;
   box-shadow: 0 0 3px rgba(100,100,100,.25);
 }
-
-.blog-post{
+.blog-post {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -109,12 +97,12 @@ background-size: cover;
   flex: 1 0 25%;
   max-width: 25%;
   background-color: white;
-  img{
+  img {
     height: 200px;
     max-width: 120%;
   }
   h3 {
-    padding:.5rem .5rem 0 .5rem;
+    padding: 0.5rem 0.5rem 0;
     margin: 0;
     overflow: hidden;
     font-family: $main;
@@ -122,24 +110,22 @@ background-size: cover;
     white-space: nowrap;
     a {
       color: $mediumgrey;
-      &:hover{
-      color: $brandred;
+      &:hover {
+        color: $brandred;
       }
     }
   }
   .entry-meta {
     color: lighten($mediumgrey, 10%);
-    padding: 0 .5rem .5rem .5rem;
-    margin: .15rem 0 1rem 0;
+    padding: 0 0.5rem 0.5rem;
+    margin: 0.15rem 0 1rem;
   }
 }
-
 //reviews section-------------------
-
-.reviews-section{
+.reviews-section {
   width: 80vw;
   margin: 0 auto;
-  h3{
+  h3 {
     font-family: $titles;
     text-transform: uppercase;
     text-align: center;
@@ -156,61 +142,56 @@ background-size: cover;
     font-family: $main;
   }
 }
-
-.reviews-container{
+.reviews-container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 3rem;
-  .review-block{
-    flex:  0 1 50%;
+  .review-block {
+    flex: 0 1 50%;
     -webkit-flex: 1 0 50%;
     -ms-flex: 1 0 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding:1.5rem;
-  &:first-child{
-    border-right: 1px dashed lighten($mediumgrey, 30%);
-    border-bottom: 1px dashed lighten($mediumgrey, 30%);
+    padding: 1.5rem;
+    &:first-child {
+      border-right: 1px dashed lighten($mediumgrey, 30%);
+      border-bottom: 1px dashed lighten($mediumgrey, 30%);
     }
-  &:nth-child(2){
-    border-bottom: 1px dashed lighten($mediumgrey, 30%);
+    &:nth-child(2) {
+      border-bottom: 1px dashed lighten($mediumgrey, 30%);
     }
-  &:nth-child(3){
-    border-right: 1px dashed lighten($mediumgrey, 30%);
+    &:nth-child(3) {
+      border-right: 1px dashed lighten($mediumgrey, 30%);
     }
   }
-  .review-text{
+  .review-text {
     flex: 0 1 70%;
     .testimonial {
-    margin: 0 0 1rem 0;
+      margin: 0 0 1rem;
     }
-    p{
-    margin: 0;
-}
-    span{
-    font-weight: bold;
+    p {
+      margin: 0;
+    }
+    span {
+      font-weight: bold;
     }
   }
 }
-
 /*Search page------------------- */
-
-
-  h1.page-title{
-    font-family: $titles;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    color: black;
-    border-bottom: 1px dashed $mediumgrey;
-    padding-bottom: 1rem;
-  }
-   p{
-    font-family: $main;
-  }
-
-.entry-summary{
-font-family: $main;
+h1.page-title {
+  font-family: $titles;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: black;
+  border-bottom: 1px dashed $mediumgrey;
+  padding-bottom: 1rem;
+}
+p {
+  font-family: $main;
+}
+.entry-summary {
+  font-family: $main;
 }

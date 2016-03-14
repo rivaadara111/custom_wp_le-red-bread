@@ -19,7 +19,7 @@ get_header(); ?>
   <div class="about-columns">
 
     <div class="copy">
-      <img src="<?php bloginfo('template_directory'); ?>/images/team.jpg" class="about-img" alt="Team Photo">
+      <img src="<?php bloginfo(template_directory); ?>/images/team.jpg" class="about-img" alt="Team Photo">
       <h3>Le Red Bread Team</h3>
       <p class="caption">
         Baking up a storm every day.
@@ -28,7 +28,7 @@ get_header(); ?>
     </div>
 
     <div class="copy">
-      <img src="<?php bloginfo('template_directory'); ?>/images/bakery.jpg" class="about-img" alt="LRB Bakery Photo">
+      <img src="<?php bloginfo(template_directory); ?>/images/bakery.jpg" class="about-img" alt="LRB Bakery Photo">
       <h3>Le Red Bread Bakery</h3>
       <p class="caption">
         A home away from home.

@@ -73,7 +73,7 @@ get_header(); ?>
       <div class="reviews-container">
 
         <div class="review-block">
-          <img src="<?php bloginfo('template_directory'); ?>/images/testimonial-headshots/dr-dosist-headshot.png" alt="Dr. Dosist Headshot" />
+          <img src="<?php bloginfo(template_directory); ?>/images/testimonial-headshots/dr-dosist-headshot.png" alt="Dr. Dosist Headshot" />
           <div class="review-text">
             <p class="testimonial">
               Healthy food be damned! If you are a bakery and sweet addict like myself this place is life changing. So many goodies. Have a cheat day and eat all the pretzels!
@@ -86,10 +86,10 @@ get_header(); ?>
         </div>
 
         <div class="review-block">
-          <img src="<?php bloginfo('template_directory'); ?>/images/testimonial-headshots/maxi-milli-headshot.png" alt="Maxi Milli Headshot" />
+          <img src="<?php bloginfo(template_directory); ?>/images/testimonial-headshots/maxi-milli-headshot.png" alt="Maxi Milli Headshot" />
           <div class="review-text">
             <p class="testimonial">
-            Do you like bread? Seriously, who doesn’t? You have to check Le Red Bread’s lovely loaves. Fresh flavours every day…need I say more?
+            Do you like bread? Seriously, who doesn\'t? You have to check Le Red Bread\’s lovely loaves. Fresh flavours every day…need I say more?
             </p>
             <p>
               <span>Maxi Milli</span><br>
@@ -99,7 +99,7 @@ get_header(); ?>
         </div>
 
         <div class="review-block">
-          <img src="<?php bloginfo('template_directory'); ?>/images/testimonial-headshots/ana-vandana-headshot.png" alt="Anna Vandana Headshot" />
+          <img src="<?php bloginfo(template_directory); ?>/images/testimonial-headshots/ana-vandana-headshot.png" alt="Anna Vandana Headshot" />
           <div class="review-text">
             <p class="testimonial">
               Excellent cookies! They always have unique flavours and the cookies are always super fresh. Make sure you get them before they sell out! And keep an eye out on holidays, the flavour combinations they come up with are brilliant. Delicious!
@@ -112,7 +112,7 @@ get_header(); ?>
         </div>
 
         <div class="review-block">
-          <img src="<?php bloginfo('template_directory'); ?>/images/testimonial-headshots/martha-m-masters-headshot.png" alt="Martha M. Masters Headshot" />
+          <img src="<?php bloginfo(template_directory); ?>/images/testimonial-headshots/martha-m-masters-headshot.png" alt="Martha M. Masters Headshot" />
           <div class="review-text">
             <p class="testimonial">
               Where has this bakery been all my life! I absolutely love their cookies and muffins. Nom nom.

@@ -1,9 +1,10 @@
-$mediumgrey: #808080;
-$redbrandcolor: #db272a;
-$lightgrey: #e1e1e1;
-
 #masthead {
   width: 100vw;
+  .search-bar-submit{
+  &:hover{
+    background-color: transparent !important;
+  }
+}
 }
 
 #header-buffer-bar{
@@ -81,12 +82,18 @@ button.search-bar-submit{
   }
 }
 
- .main-navigation .current-menu-item {
-  box-shadow: inset 0 -3px  $brandred;
-  >a{
-    color: $hover;
-  }
+.main-navigation .current-menu-item,
+.main-navigation .current_page_item,
+.main-navigation .current-menu-item:after,
+.main-navigation .current_page_ancestor:after,
+.main-navigation .current_page_item:after {
+ box-shadow: inset 0 -3px  $brandred;
+ >a {
+   color: $hover;
+ }
 }
+
+
 
 .main-navigation{
   margin-left: 7.5%;

@@ -28,6 +28,7 @@
 p.bizhours{
 margin-bottom: 0rem;
 margin-top: 0rem;
+line-height: 2rem;
 }
 ul{
   list-style: none;
@@ -52,8 +53,17 @@ color:$brandred;
   color:$mediumgrey;
   font-size: .7rem;
   line-height: 1.6rem;
-  .fa-map-marker{
+  .fa-map-marker::before{
+    content: "\f041";
   }
+}
+
+.widget_archive li{
+  line-height: 2rem;
+}
+
+.widget_text a{
+line-height: 2rem;
 }
 
 
@@ -65,6 +75,11 @@ color:$brandred;
 		max-width: 100%;
 	}
 }
+
+.textwidget .white{
+  color: white;
+}
+
 
 /* Search widget. */
 .widget_search .search-submit {

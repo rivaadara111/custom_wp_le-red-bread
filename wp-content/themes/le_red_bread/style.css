@@ -7,7 +7,7 @@ Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
+Tags: red
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -45,6 +45,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 #masthead {
   width: 100vw; }
+  #masthead .search-bar-submit:hover {
+    background-color: transparent !important; }
 
 #header-buffer-bar {
   background-color: #fafafa;
@@ -120,9 +122,17 @@ button.search-bar-submit {
     padding-top: 4px;
     color: #808080; }
 
-.main-navigation .current-menu-item {
+.main-navigation .current-menu-item,
+.main-navigation .current_page_item,
+.main-navigation .current-menu-item:after,
+.main-navigation .current_page_ancestor:after,
+.main-navigation .current_page_item:after {
   box-shadow: inset 0 -3px #db272a; }
-  .main-navigation .current-menu-item > a {
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item:after > a,
+  .main-navigation .current_page_ancestor:after > a,
+  .main-navigation .current_page_item:after > a {
     color: #400c0d; }
 
 .main-navigation {
@@ -720,7 +730,8 @@ a {
 
 p.bizhours {
   margin-bottom: 0rem;
-  margin-top: 0rem; }
+  margin-top: 0rem;
+  line-height: 2rem; }
 
 ul {
   list-style: none;
@@ -741,12 +752,23 @@ a {
   color: #808080;
   font-size: .7rem;
   line-height: 1.6rem; }
+  .fa .fa-map-marker::before {
+    content: "\f041"; }
+
+.widget_archive li {
+  line-height: 2rem; }
+
+.widget_text a {
+  line-height: 2rem; }
 
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+
+.textwidget .white {
+  color: white; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -772,7 +794,7 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 0 .5rem; }
+  padding: 0 0 0.5rem; }
 
 .blog-page {
   margin-left: 7vw; }
@@ -789,7 +811,8 @@ a {
   font-family: "overlock";
   font-size: 2rem;
   text-align: left;
-  margin: 0; }
+  margin: 0;
+  padding-top: 0.5rem; }
 
 #primary.content-area {
   width: 60vw;
@@ -817,7 +840,17 @@ h3#reply-title.comment-reply-title {
 
 textarea#comment {
   background-color: #fafafa;
-  margin-top: .5rem; }
+  margin-top: 0.5rem; }
+
+blockquote,
+q {
+  border-left: 7px solid #db272a;
+  color: #a1a1a1;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-left: 0;
+  padding-left: 1.5rem;
+  quotes: "" ""; }
 
 #post-25 h1 {
   display: none; }
@@ -874,8 +907,8 @@ textarea#comment {
   height: 90px;
   background-color: #fafafa;
   border: 1px solid #e1e1e1;
-  padding: .5rem .5rem .5rem 3rem;
-  margin: 5rem 0 4rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  margin: 5rem 0 4rem;
   width: 100%; }
   .contact-box span {
     margin-right: 5rem; }
@@ -939,7 +972,7 @@ header.page-header {
     width: 90%; }
 
 .product-box {
-  margin: 0 2rem 2rem 2rem; }
+  margin: 0 2rem 2rem; }
   .product-box:hover {
     cursor: pointer; }
   .product-box img {
@@ -992,7 +1025,7 @@ header.page-header {
 .product-data {
   padding: 0.5rem; }
   .product-data .product-title {
-    padding-right: .25rem;
+    padding-right: 0.25rem;
     float: left; }
     .product-data .product-title::before {
       float: right;
@@ -1000,13 +1033,14 @@ header.page-header {
       content: "..................."; }
   .product-data .price {
     float: right;
-    padding-left: .25rem; }
+    padding-left: 0.25rem; }
 
 .product-type-header h1.page-title {
   text-transform: uppercase;
   color: black;
   font-size: 2rem;
-  font-family: "overlock"; }
+  font-family: "overlock";
+  border-bottom: 1px dashed #cdcdcd; }
 
 .product-type-header p {
   width: 90%;
@@ -1041,7 +1075,7 @@ header.page-header {
 .individual-products .entry-content {
   font-size: 1.5rem;
   font-family: "overlock";
-  margin: .5rem 0 0 0;
+  margin: 0.5rem 0 0;
   color: black;
   font-weight: bold; }
 
@@ -1082,9 +1116,10 @@ header.page-header {
     width: 20rem;
     margin-bottom: 0; }
 
-.wpcf7 input, .wpcf7 textarea {
+.wpcf7 input,
+.wpcf7 textarea {
   background-color: #fafafa;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   border: 1px solid #e1e1e1; }
 
 .wpcf7 input {
@@ -1098,7 +1133,10 @@ header.page-header {
 .wpcf7 b {
   color: #db272a; }
 
-.wpcf7-submit, .submit-button, input#submit.submit, button {
+.wpcf7-submit,
+.submit-button,
+input#submit.submit,
+button {
   height: 40px;
   width: 130px !important;
   background-color: #400c0d !important;
@@ -1110,26 +1148,29 @@ header.page-header {
   letter-spacing: 1px;
   border: none !important;
   text-shadow: none !important;
-  padding: 0 0 .1rem 0 !important; }
-  .wpcf7-submit:hover, .submit-button:hover, input#submit.submit:hover, button:hover {
+  padding: 0 0 0.1rem !important; }
+  .wpcf7-submit:hover,
+  .submit-button:hover,
+  input#submit.submit:hover,
+  button:hover {
     background-color: #6b1416 !important; }
 
 .search-submit {
   width: 50px !important;
   height: 41px;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0;
   border: none;
   border-radius: 3px;
   background: #400c0d;
   color: #fff;
   cursor: pointer;
   line-height: 1;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   text-decoration: none; }
   .search-submit .fa {
     color: white;
-    margin-left: .6rem;
-    font-size: .9rem; }
+    margin-left: 0.6rem;
+    font-size: 0.9rem; }
 
 .sticky {
   display: block; }
@@ -1147,7 +1188,7 @@ header.page-header {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 3rem 0; }
+  margin: 1.5em 0 3rem; }
 
 .page-links {
   clear: both;
@@ -1177,9 +1218,20 @@ header.page-header {
     .footer-container fieldset label {
       font-weight: bold; }
       .footer-container fieldset label .search-field {
-        padding: .5rem;
+        padding: 0.5rem;
         background: #fafafa;
         line-height: 1.5rem; }
+  .footer-container .search-bar-submit {
+    background-color: #400c0d !important;
+    color: white !important;
+    width: 40px !important;
+    margin-top: 0.1rem; }
+    .footer-container .search-bar-submit:hover {
+      background-color: #6b1416 !important; }
+    .footer-container .search-bar-submit .fa {
+      color: white;
+      margin-left: 0.5rem;
+      font-size: 1rem; }
 
 .search-results {
   display: -webkit-flex;
@@ -1203,9 +1255,78 @@ header.page-header {
     .search-results fieldset label {
       font-weight: bold; }
       .search-results fieldset label .search-field {
-        padding: .5rem;
+        padding: 0.5rem;
         background: #fafafa;
         line-height: 1.5rem; }
+
+.comment-form label {
+  font-weight: bold;
+  color: #808080; }
+
+.comment-form span {
+  color: red; }
+
+.comment-form input,
+.comment-form textarea {
+  padding: 0.5rem;
+  background: #fafafa;
+  line-height: 1.5rem;
+  border: 1px solid #e1e1e1;
+  width: 100%;
+  margin-top: 0.5rem; }
+
+.comment-form p {
+  font-weight: normal; }
+
+.comment-form .comment-form-email,
+.comment-form .comment-form-author {
+  float: left; }
+
+.comment-form .comment-form-author {
+  width: 48%;
+  margin-right: 2%; }
+
+.comment-form .comment-form-email {
+  width: 48%;
+  margin-left: 2%; }
+
+.post-navigation {
+  display: none; }
+
+.comments-area .comments-title {
+  font-size: 1.75rem;
+  font-family: "overlock";
+  color: #808080; }
+
+.comments-area ol.comment-list {
+  margin: 0;
+  padding: 0; }
+
+.comments-area .comment {
+  padding: 1.5rem 0; }
+
+.comments-area li {
+  border-bottom: 1px dashed #e1e1e1;
+  list-style: none; }
+
+.comments-area .comment-body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.comments-area .comment-author-avatar {
+  border-radius: 50%;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px; }
+
+.comments-area cite.fn {
+  font-style: normal;
+  font-weight: bold; }
+
+.comments-area .comment-metadata {
+  color: #808080; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1272,7 +1393,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page------------------- */
 .banner {
-  background: url(../../images/hero-bread.jpg) center top no-repeat;
+  background: url("../../images/hero-bread.jpg") center top no-repeat;
   height: 500px;
   width: 100vw;
   display: -webkit-flex;
@@ -1304,7 +1425,7 @@ object {
   padding-top: 2rem; }
 
 .product-box-home {
-  margin: 0 1rem 2rem 1rem; }
+  margin: 0 1rem 2rem; }
   .product-box-home img {
     width: 170px;
     height: 110px;
@@ -1322,7 +1443,7 @@ object {
   height: 90px;
   background-color: #fafafa;
   border: 1px solid #e1e1e1;
-  padding: .5rem .5rem .5rem 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
   margin: 0 auto 2rem;
   width: 80vw; }
   .see-products-box span {
@@ -1380,7 +1501,7 @@ object {
     height: 200px;
     max-width: 120%; }
   .blog-post h3 {
-    padding: .5rem .5rem 0 .5rem;
+    padding: 0.5rem 0.5rem 0;
     margin: 0;
     overflow: hidden;
     font-family: "open_sans";
@@ -1392,8 +1513,8 @@ object {
         color: #db272a; }
   .blog-post .entry-meta {
     color: #9a9a9a;
-    padding: 0 .5rem .5rem .5rem;
-    margin: .15rem 0 1rem 0; }
+    padding: 0 0.5rem 0.5rem;
+    margin: 0.15rem 0 1rem; }
 
 .reviews-section {
   width: 80vw;
@@ -1452,7 +1573,7 @@ object {
         -ms-flex: 0 1 70%;
             flex: 0 1 70%; }
     .reviews-container .review-text .testimonial {
-      margin: 0 0 1rem 0; }
+      margin: 0 0 1rem; }
     .reviews-container .review-text p {
       margin: 0; }
     .reviews-container .review-text span {

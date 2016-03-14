@@ -2,17 +2,15 @@
 # Content
 --------------------------------------------------------------*/
 /* General Posts and pages */
-
 // Blog Page -----------------------------------
 .site-content {
   display: flex;
   justify-content: center;
-  padding: 0 0 .5rem;
+  padding: 0 0 0.5rem;
 }
 .blog-page {
   margin-left: 7vw;
 }
-
 .entry-content,
 .entry-header {
   font-family: $main;
@@ -20,96 +18,92 @@
 .entry-header {
   color: $mediumgrey;
 }
-
 .entry-title {
   color: black;
   font-family: $titles;
   font-size: 2rem;
-  text-align:left;
+  text-align: left;
   margin: 0;
+  padding-top: 0.5rem;
 }
 #primary.content-area {
   width: 60vw;
   margin: 2rem 5rem 3rem 6rem;
 }
-
 .entry-footer,
 .post-navigation,
 .comments-area {
   font-family: $main;
 }
-
-.single-blog-post p a{
+.single-blog-post p a {
   display: none;
 }
-
-.tags-links{
+.tags-links {
   padding-left: 1rem;
-  }
-
-.comment-form-comment{
+}
+.comment-form-comment {
   font-weight: bold;
   color: $mediumgrey;
-  }
-
-h3#reply-title.comment-reply-title{
+}
+h3#reply-title.comment-reply-title {
   font-family: $titles;
   color: $hover;
   font-size: 1.5rem;
-
 }
-textarea#comment{
+textarea#comment {
   background-color: #fafafa;
-  margin-top: .5rem;
-  }
-
+  margin-top: 0.5rem;
+}
+blockquote,
+q {
+  border-left: 7px solid #db272a;
+  color: #a1a1a1;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-left: 0;
+  padding-left: 1.5rem;
+  quotes: "" "";
+}
 // Home Page -----------------------------------
 #post-25 h1 {
   display: none;
 }
-
 //about page---------------------------------------
-
-#about-primary{
+#about-primary {
   width: 1024px;
 }
-
-.about-container{
+.about-container {
   width: 100%;
-  padding:0;
-p {
-  font-family: $main;
+  padding: 0;
+  p {
+    font-family: $main;
   }
-h2{
-  font-family: $titles;
-  font-size: 1.75rem;
-  text-align: center;
+  h2 {
+    font-family: $titles;
+    font-size: 1.75rem;
+    text-align: center;
   }
 }
-
-#single-blog-post-title{
+#single-blog-post-title {
   text-transform: uppercase;
-
 }
-
-.about-title{
+.about-title {
   text-align: center;
   margin-top: 3rem;
- h1 {
-  font-family: $titles;
-  font-weight: bold;
-  font-size: 2rem;
-  font-color: black;
+  h1 {
+    font-family: $titles;
+    font-weight: bold;
+    font-size: 2rem;
+    font-color: black;
   }
 }
-
-.about-columns{
+.about-columns {
   display: flex;
   justify-content: space-between;
   .copy {
     flex: 0 1 47.5%;
   }
-  img{
+  img {
     height: 484px;
     width: auto;
   }
@@ -117,26 +111,24 @@ h2{
     font-family: $titles;
     font-size: 1.75rem;
     color: $hover;
-    margin:0;
+    margin: 0;
   }
-  .caption{
+  .caption {
     color: $mediumgrey;
     margin: 0;
-    }
+  }
 }
-
 .contact-box {
   height: 90px;
   background-color: #fafafa;
   border: 1px solid #e1e1e1;
-  padding: .5rem .5rem .5rem 3rem;
-  margin: 5rem 0 4rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  margin: 5rem 0 4rem;
   width: 100%;
   span {
-  margin-right: 5rem;
-}
+    margin-right: 5rem;
   }
-
+}
 //product page  -----------------------------------
 header.page-header {
   display: none;
@@ -179,20 +171,19 @@ header.page-header {
     transform: translate(-50%,-50%);
   }
   .blog {
-  margin: 0 auto;
+    margin: 0 auto;
+  }
 }
-}
-
 //product type row
 .flex-product-type {
   display: flex;
   flex-direction: row;
-  .home{
-  width: 90%;
+  .home {
+    width: 90%;
   }
 }
 .product-box {
-  margin: 0 2rem 2rem 2rem;
+  margin: 0 2rem 2rem;
   &:hover {
     cursor: pointer;
   }
@@ -212,7 +203,6 @@ header.page-header {
     text-decoration: underline;
   }
 }
-
 //indivual product grid
 .product-grid {
   display: flex;
@@ -222,7 +212,6 @@ header.page-header {
   width: 90vw;
   margin: 0 0 2rem 4rem;
 }
-
 .product-square {
   display: flex;
   flex-direction: column;
@@ -236,82 +225,76 @@ header.page-header {
     width: 250px;
   }
 }
-
 .product-data {
   padding: 0.5rem;
-  .product-title{
-    padding-right: .25rem;
-    float:left;
-    &::before{
+  .product-title {
+    padding-right: 0.25rem;
+    float: left;
+    &::before {
       float: right;
-      width:0;
+      width: 0;
       content: "...................";
     }
   }
-  .price{
-    float:right;
-    padding-left: .25rem;
+  .price {
+    float: right;
+    padding-left: 0.25rem;
   }
 }
-
 //product type pages
-.product-type-header{
-  h1.page-title{
-  text-transform: uppercase;
-  color:black;
-  font-size: 2rem;
-  font-family: $titles;
+.product-type-header {
+  h1.page-title {
+    text-transform: uppercase;
+    color: black;
+    font-size: 2rem;
+    font-family: $titles;
+    border-bottom: 1px dashed lighten($mediumgrey, 30%);
   }
-  p{
+  p {
     width: 90%;
     font-family: $main;
   }
 }
-
-.taxonomy-description{
+.taxonomy-description {
   border-bottom: 1px dashed lighten($mediumgrey, 30%);
 }
-
-.product-menu-item{
+.product-menu-item {
   display: flex;
   border-bottom: 1px dashed lighten($mediumgrey, 30%);
   align-items: center;
-  img{
-   width: 175px;
-   height: 150px;
-  padding-right: 1rem;
-   }
-  p{
- font-family: $main;
+  img {
+    width: 175px;
+    height: 150px;
+    padding-right: 1rem;
   }
-  span{
-  font-family: $main;
+  p {
+    font-family: $main;
+  }
+  span {
+    font-family: $main;
   }
 }
-
 //individual product pages
-
-.individual-products{
- h1.entry-title{
-  text-transform: uppercase;
-  color:black;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.individual-products {
+  h1.entry-title {
+    text-transform: uppercase;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
-  .entry-content{
-  font-size: 1.5rem;
-  font-family: $titles;
-  margin: .5rem 0 0 0;
-  color: black;
-  font-weight: bold;
-}
-  p{
+  .entry-content {
+    font-size: 1.5rem;
+    font-family: $titles;
+    margin: 0.5rem 0 0;
+    color: black;
+    font-weight: bold;
+  }
+  p {
     width: 90%;
     font-family: $main;
     font-size: 1rem;
     font-weight: normal;
   }
-
 }
 // Contact Page -----------------------------------
 #post-13 {
@@ -331,24 +314,24 @@ header.page-header {
     font-size: 1.8rem;
   }
 }
-
-.wpcf7{
-  .flex{
+.wpcf7 {
+  .flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    input{
+    input {
       width: 20rem;
       margin-bottom: 0;
     }
   }
-  input, textarea {
+  input,
+  textarea {
     background-color: #fafafa;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     border: 1px solid $lightgrey;
   }
-  input{
+  input {
     height: 40px;
     width: 100%;
   }
@@ -360,8 +343,10 @@ header.page-header {
     color: $brandred;
   }
 }
-
-.wpcf7-submit, .submit-button, input#submit.submit, button {
+.wpcf7-submit,
+.submit-button,
+input#submit.submit,
+button {
   height: 40px;
   width: 130px !important;
   background-color: $hover !important;
@@ -373,31 +358,29 @@ header.page-header {
   letter-spacing: 1px;
   border: none !important;
   text-shadow: none !important;
-  padding: 0 0 .1rem 0 !important;
+  padding: 0 0 0.1rem !important;
   &:hover {
     background-color: lighten($hover, 10%) !important;
   }
 }
-
-.search-submit{
+.search-submit {
   width: 50px !important;
   height: 41px;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0;
   border: none;
   border-radius: 3px;
   background: #400c0d;
   color: #fff;
   cursor: pointer;
   line-height: 1;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
-.fa{
-  color: white;
-  margin-left: .6rem;
-  font-size: .9rem;
+  .fa {
+    color: white;
+    margin-left: 0.6rem;
+    font-size: 0.9rem;
   }
 }
-
 // ------------------------------------------------
 .sticky {
   display: block;
@@ -415,13 +398,12 @@ header.page-header {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: $base__space-unit 0 3rem 0;
+  margin: $base__space-unit 0 3rem;
 }
 .page-links {
   clear: both;
   margin: 0 0 $base__space-unit;
 }
-
 /* Comments */
 .comment-content a {
   word-wrap: break-word;
@@ -429,53 +411,136 @@ header.page-header {
 .bypostauthor {
   display: block;
 }
-
 //404----------------------------
-
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: flex-start;
   width: 60vw;
   margin: 2rem 0 0 5.8rem;
   font-family: $main;
-  fieldset{
+  fieldset {
     padding: 0;
     border: none;
     margin: 0;
     label {
       font-weight: bold;
-      .search-field{
-        padding: .5rem;
+      .search-field {
+        padding: 0.5rem;
         background: #fafafa;
         line-height: 1.5rem;
-        }
       }
+    }
+  }
+  .search-bar-submit {
+    background-color: $hover !important;
+    color: white !important;
+    width: 40px !important;
+    margin-top: 0.1rem;
+    &:hover {
+      background-color: lighten($hover, 10%) !important;
+    }
+    .fa {
+      color: white;
+      margin-left: 0.5rem;
+      font-size: 1rem;
+    }
   }
 }
-
-.search-results{
+.search-results {
   display: flex;
   justify-content: flex-start;
   width: 60vw;
   margin-left: 4.2rem;
   font-family: $main;
-  .entry-title{
+  .entry-title {
     text-transform: uppercase;
-    color:black;
+    color: black;
     font-size: 2rem;
     font-family: $titles;
-}
-  fieldset{
+  }
+  fieldset {
     padding: 0;
     border: none;
     margin: 0;
     label {
       font-weight: bold;
-      .search-field{
-        padding: .5rem;
+      .search-field {
+        padding: 0.5rem;
         background: #fafafa;
         line-height: 1.5rem;
-        }
       }
+    }
+  }
+}
+//comments-area--------------------------
+.comment-form {
+  label {
+    font-weight: bold;
+    color: $mediumgrey;
+  }
+  span {
+    color: red;
+  }
+  input,
+  textarea {
+    padding: 0.5rem;
+    background: #fafafa;
+    line-height: 1.5rem;
+    border: 1px solid $lightgrey;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  p {
+    font-weight: normal;
+  }
+  .comment-form-email,
+  .comment-form-author {
+    float: left;
+  }
+  .comment-form-author {
+    width: 48%;
+    margin-right: 2%;
+  }
+  .comment-form-email {
+    width: 48%;
+    margin-left: 2%;
+  }
+}
+.post-navigation {
+  display: none;
+}
+.comments-area {
+  .comments-title {
+    font-size: 1.75rem;
+    font-family: $titles;
+    color: $mediumgrey;
+  }
+  ol.comment-list {
+    margin: 0;
+    padding: 0;
+  }
+  .comment {
+    padding: 1.5rem 0;
+  }
+  li {
+    border-bottom: 1px dashed $lightgrey;
+    list-style: none;
+  }
+  .comment-body {
+    display: flex;
+  }
+  .comment-author-avatar {
+    border-radius: 50%;
+    height: 64px;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    width: 64px;
+  }
+  cite.fn {
+    font-style: normal;
+    font-weight: bold;
+  }
+  .comment-metadata {
+    color: $mediumgrey;
   }
 }
