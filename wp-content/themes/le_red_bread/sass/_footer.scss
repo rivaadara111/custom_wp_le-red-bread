@@ -1,8 +1,5 @@
-$darkslategrey: #222222;
-$darkgrey: #333333;
-$mediumgrey: #808080;
-$main: 'open_sans';
-$titles: 'overlock';
+/*-------------------------------------------------- */
+/*Footer --------------------------------------- */
 
 .site-footer{
   width:100%;
@@ -41,18 +38,17 @@ $titles: 'overlock';
     }
   }
   span{
-  font-weight: bold;
+    font-weight: bold;
+  }
+  }
+  h2.business-hours {
+    margin-bottom: 1.5rem;
+  }
+ p.business-hours{
+    margin-bottom: 1.7rem;
   }
 }
 
-h2.business-hours,{
-margin-bottom: 1.5rem;
-}
- p.business-hours{
-margin-bottom: 1.7rem;
-}
-
-}
 .fa {
   margin: 0 .7rem 0 0;
   font-size: 1.25rem;

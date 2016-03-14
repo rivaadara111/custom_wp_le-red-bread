@@ -1,11 +1,63 @@
-// .about-title{
-// display: flex;
-// justify-content: center;
-// align-items: center;
-//  h1{
-// font-family: $titles;
-// }
-// p{
-// font-family: $main;
-// }
-// }
+/*-------------------------------------------------- */
+//About page--------------------------------------- */
+
+#about-primary {
+  width: 1024px;
+}
+.about-container {
+  width: 100%;
+  padding: 0;
+  p {
+    font-family: $main;
+  }
+  h2 {
+    font-family: $titles;
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+#single-blog-post-title {
+  text-transform: uppercase;
+}
+.about-title {
+  text-align: center;
+  margin-top: 3rem;
+  h1 {
+    font-family: $titles;
+    font-weight: bold;
+    font-size: 2rem;
+    font-color: black;
+  }
+}
+.about-columns {
+  display: flex;
+  justify-content: space-between;
+  .copy {
+    flex: 0 1 47.5%;
+  }
+  img {
+    height: 484px;
+    width: auto;
+  }
+  h3 {
+    font-family: $titles;
+    font-size: 1.75rem;
+    color: $hover;
+    margin: 0;
+  }
+  .caption {
+    color: $mediumgrey;
+    margin: 0;
+  }
+}
+.contact-box {
+  height: 90px;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  margin: 5rem 0 4rem;
+  width: 100%;
+  span {
+    margin-right: 5rem;
+  }
+}

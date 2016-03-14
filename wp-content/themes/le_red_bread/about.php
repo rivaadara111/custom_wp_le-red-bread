@@ -1,8 +1,7 @@
 <?php
 /**
-* Template Name: About Page
+* Template Name: About Page.
 **/
-
 get_header(); ?>
 
 <div id="about-primary" class="content-area">
@@ -44,7 +43,7 @@ get_header(); ?>
     <div class="contact-box">
       <p>
         <span>Feel free to contact us with any questions coments or suggestions. We even take custom orders!</span>
-        <a href="<?php echo esc_url( home_url('/contact') );?>"><button type="submit" class="submit-button" name="submit-button">Contact Us</button></a>
+        <a href="<?php echo esc_url(home_url('/contact'));?>"><button type="submit" class="submit-button" name="submit-button">Contact Us</button></a>
       </p>
 
     </div>

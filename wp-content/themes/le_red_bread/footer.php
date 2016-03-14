@@ -1,10 +1,7 @@
 <?php
 /**
  * The template for displaying the footer.
- *
- * @package RED_Starter_Theme
  */
-
 ?>
 
 			</div><!-- #content -->

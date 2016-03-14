@@ -1,16 +1,13 @@
 <?php
 /**
  * The template for displaying archive pages.
- *
- * @package RED_Starter_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="product-content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php if (have_posts()) : ?>
 
 <!-- .page-header -->
 		<header class="product-header">
@@ -21,11 +18,11 @@ get_header(); ?>
 			<hr class="horizontal-rule"></hr>
 
 			<?php
-		    $terms = get_terms( 'product-type');
-		  ?>
+            $terms = get_terms('product-type');
+          ?>
 
 			<div class="flex-product-type">
-			  <?php if (! empty($terms) ) : ?>
+			  <?php if (!empty($terms)) : ?>
 			  <?php foreach ($terms as $term) : ?>
 				<div class="product-box">
 					<a href='<?php echo get_term_link($term); ?>'>
@@ -41,19 +38,19 @@ get_header(); ?>
 <!--PRODUCT GRID--------------->
 			<?php /* Start the Loop */ ?>
 			<div class="product-grid">
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while (have_posts()) : the_post(); ?>
 
 
 			<div class="product-square">
 			<a href="<?php echo the_permalink($product);?>">
-	      <?php if ( has_post_thumbnail() ) : ?>
-	        <?php the_post_thumbnail( 'original' ); ?>
+	      <?php if (has_post_thumbnail()) : ?>
+	        <?php the_post_thumbnail('original'); ?>
 	      <?php endif; ?>
 			</a>
 
 			<div class="product-data">
 	      	<span class="product-title"><?php the_title(); ?></span>
-					<span class="price"><?php echo CFS()->get( 'price' ); ?></span>
+					<span class="price"><?php echo CFS()->get('price'); ?></span>
 			</div>
 			</div>
 

@@ -1,96 +1,78 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-
 //sidebar-----------------------------
-
 #secondary {
   width: 30vw;
-	padding: 2rem 2rem 2rem 3rem;
-	border-left: 1px solid $lightgrey;
+  padding: 2rem 2rem 2rem 3rem;
+  border-left: 1px solid $lightgrey;
 }
-
-.widget-title{
-	text-transform: uppercase;
-	font-size: 1.25rem;
-	color: black;
-	font-family: $titles;
+.widget-title {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: black;
+  font-family: $titles;
 }
-
-.bizhours, .textwidget{
-	font-family: $main;
+.bizhours,
+.textwidget {
+  font-family: $main;
   line-height: 1.6rem;
   span {
-  color: $brandred;
+    color: $brandred;
   }
 }
-
-p.bizhours{
-margin-bottom: 0rem;
-margin-top: 0rem;
-line-height: 2rem;
+p.bizhours {
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 2rem;
 }
-ul{
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-li{
-	font-family: $main;
+li {
+  font-family: $main;
 }
-
-a{
-text-decoration: none;
-color:$brandred;
-  &:hover{
+a {
+  text-decoration: none;
+  color: $brandred;
+  &:hover {
     color: $hover;
     text-decoration: underline;
   }
 }
-
-.fa{
-  color:$mediumgrey;
-  font-size: .7rem;
+.fa {
+  color: $mediumgrey;
+  font-size: 0.7rem;
   line-height: 1.6rem;
-  .fa-map-marker::before{
+  .fa-map-marker::before {
     content: "\f041";
   }
 }
-
-.widget_archive li{
+.widget_archive li {
   line-height: 2rem;
 }
-
-.widget_text a{
-line-height: 2rem;
+.widget_text a {
+  line-height: 2rem;
 }
-
-
 .widget {
-	margin: 0 0 $base__space-unit;
-
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+  margin: 0 0 $base__space-unit;
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
 }
-
-.textwidget .white{
+.textwidget .white {
   color: white;
 }
-
-
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+  display: none;
 }
-
 //comments block---------------------------
-
-
-.widget_categories .widget-title{
-  visibility:collapse;
+.widget_categories .widget-title {
+  visibility: collapse;
   display: none;
 }
 .widgettitle {
