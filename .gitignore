@@ -9,6 +9,14 @@ ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
 
+# Ignore logs and databases #
+# ========================= #
+*.log
+*.sql
+*.sqlite
+error_log
+access_log
+
 # Ignore packages #
 # =============== #
 *.7z
@@ -37,13 +45,22 @@ wp-content/themes/le_red_bread/node_modules/
 wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
+!wp-content/uploads/
 
 # Ignore everything in "plugins" except certain plugins.
 # =============== #
 wp-content/plugins/*
 !wp-content/plugins/core-functionality/
+!wp-content/plugins/lrb-functionality/
+!wp-content/plugins/contact-form-7/
+!wp-content/plugins/custom-field-suite/
+!wp-content/plugins/lrb-business-hours-widget/
 
 # Ignore everything in "themes" except the active theme.
 # =============== #
 wp-content/themes/*
 !wp-content/themes/le_red_bread/
+
+# Ignore npm packages #
+# =================== #
+wp-content/themes/le_red_bread/node_modules/
