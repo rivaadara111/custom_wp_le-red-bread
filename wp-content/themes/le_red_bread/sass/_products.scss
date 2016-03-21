@@ -89,27 +89,25 @@ header.page-header {
   margin: 0 0 2rem 4rem;
 }
 .product-square {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-basis:25%;
+  width: 25%;
   font-family: $main;
   font-size: 0.9rem;
   margin: 0;
   border: 1px solid $lightgrey;
-  .wp-post-image {
-    height: 250px;
-    width: 250px;
-  }
 }
 .product-data {
   padding: 0.5rem;
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
   .product-title {
-    padding-right: 0.25rem;
-    float: left;
-    &::before {
-      float: right;
-      width: 0;
-      content: "...................";
+    overflow: hidden;
+    white-space: nowrap;
+    &:after {
+      content: ".......................................................";
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
   .price {

@@ -1,68 +1,57 @@
 /*-------------------------------------------------- */
 /*Footer --------------------------------------- */
-
-.site-footer{
-  width:100%;
+.site-footer {
+  width: 100%;
   background-color: $darkslategrey;
 }
-
-.footer-blocks-container{
+.footer-blocks-container {
   display: flex;
   justify-content: space-between;
-  color:white;
-  margin: 0 5rem 0 5rem;
+  color: white;
+  margin: 0 5rem;
 }
-
-.footer-blocks-item{
-  padding: 2rem 1rem 0 1rem;
-  img{
+.footer-blocks-item {
+  padding: 2rem 1rem 0;
+  img {
     width: 250px;
     margin-top: 3rem;
   }
-  h2{
+  h2 {
     text-transform: uppercase;
     font-size: 1.25rem;
     color: $mediumgrey;
     line-height: 1rem;
     font-family: $titles;
   }
-  p{
+  p {
     font-family: $main;
     font-size: 1rem;
-    line-height:1.3rem !important;
-  a{
-    text-decoration: none;
-    color:white;
-    &:hover{
-      text-decoration: underline;
+    line-height: 1.3rem !important;
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    span {
+      font-weight: bold;
     }
   }
-  span{
-    font-weight: bold;
-  }
-  }
-  h2.business-hours {
-    margin-bottom: 1.5rem;
-  }
- p.business-hours{
-    margin-bottom: 1.7rem;
-  }
 }
-
 .fa {
-  margin: 0 .7rem 0 0;
+  margin: 0 0.7rem 0 0;
   font-size: 1.25rem;
 }
-
-.site-info{
+.site-info {
   height: 50px;
-  width:100%;
+  width: 100%;
   background-color: $darkgrey;
-  p{
-    color:white;
+  p {
+    color: white;
     text-align: center;
     padding-top: 16px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-family: $main;
   }
 }

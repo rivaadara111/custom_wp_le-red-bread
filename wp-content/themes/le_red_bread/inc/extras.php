@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function red_starter_body_classes( $classes ) {
+function lrb_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -40,16 +40,14 @@ function lrb_modify_archive_loop($query){
 }
 add_action( 'pre_get_posts','lrb_modify_archive_loop' );
 
-//stretch goal: create custom loop of tsetimonials. gotta make a custom post type called testimonials though. and then create some custom fields with the object too.
+//Custom WP Admin Login Header&Link header img to site--*
 
-//link login page header image to site url
-
-function the_url(){
+function the_lrb_site_url(){
 	return home_url();
 }
-add_filter( 'login_headerurl', 'the_url');
+add_filter( 'login_headerurl', 'the_lrb_site_url');
 
-//make custom login page header url
+//make custom login page header url--*
 
 function lrb_login_logo() {
     echo '<style type="text/css">
@@ -61,7 +59,7 @@ function lrb_login_logo() {
   }
 add_action( 'login_head', 'lrb_login_logo' );
 
-//get titles to show no taxonomy title
+//get titles to show no taxonomy title--*
 function lrb_archive_title( $title ) {
     if ( is_post_type_archive( array( 'product') ) ) {
         $title = 'Our Products Are Made Fresh Daily';
@@ -72,8 +70,7 @@ function lrb_archive_title( $title ) {
 }
     add_filter( 'get_the_archive_title', 'lrb_archive_title' );
 
-
-//add a read-more link after each blog post
+//add a read-more link after each blog post--*
 function lrb_wp_trim_excerpt( $text ) {
     $raw_excerpt = $text;
 

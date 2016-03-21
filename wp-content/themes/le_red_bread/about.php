@@ -9,16 +9,16 @@ get_header(); ?>
 <div class="about-container">
 
   <header class="about-title">
-    <h1>LEARN ABOUT OUR TEAM AND CULTURE</h1>
+    <h1>learn about our team and culture</h1>
     <p><?php echo CFS()->get(tagline); ?></p>
     <br>
-    <hr class="horizontal-rule"></hr>
+    <hr class="horizontal-rule">
   </header>
 
   <div class="about-columns">
 
     <div class="copy">
-      <img src="<?php bloginfo(template_directory); ?>/images/team.jpg" class="about-img" alt="Team Photo">
+      <img src="<?php echo get_template_directory_uri().'/images/team.jpg';?>" class="about-img" alt="Team Photo">
       <h3>Le Red Bread Team</h3>
       <p class="caption">
         Baking up a storm every day.
@@ -27,7 +27,7 @@ get_header(); ?>
     </div>
 
     <div class="copy">
-      <img src="<?php bloginfo(template_directory); ?>/images/bakery.jpg" class="about-img" alt="LRB Bakery Photo">
+      <img src="<?php echo get_template_directory_uri().'/images/bakery.jpg';?>" class="about-img" alt="LRB Bakery Photo">
       <h3>Le Red Bread Bakery</h3>
       <p class="caption">
         A home away from home.

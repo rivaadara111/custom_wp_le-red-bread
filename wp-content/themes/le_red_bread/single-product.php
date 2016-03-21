@@ -9,7 +9,7 @@ get_header(); ?>
     <div class="individual-products">
 		<?php while (have_posts()) : the_post(); ?>
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
 	<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 
     	<header class="entry-header">

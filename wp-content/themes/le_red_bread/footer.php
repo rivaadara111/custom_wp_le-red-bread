@@ -15,7 +15,7 @@
 						<p> <i class="fa fa-facebook-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-google-plus-square"></i></p>
 					</div>
 					<div class="footer-blocks-item">
-						<img src="<?php bloginfo(template_directory); ?>/images/lrb-logo-white.svg" class="logo" alt="Le Red Bread logo">
+						<img src="<?php echo get_template_directory_uri().'/images/lrb-logo-white.svg';?>" class="logo" alt="Le Red Bread logo">
 					</div>
 					<div class="footer-blocks-item" >
 						<h2 class="business-hours">business hours</h2>

@@ -30,7 +30,7 @@
 		<?php red_starter_entry_footer(); ?>
 	</footer>
 <br>
- <hr class="horizontal-rule blog"></hr>
+ <hr class="horizontal-rule blog">
 <!-- .entry-footer -->
 
 

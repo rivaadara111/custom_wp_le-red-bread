@@ -3,24 +3,17 @@
  * The template for displaying archive pages.
  */
 get_header(); ?>
-
-	<div id="primary" class="product-content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if (have_posts()) : ?>
-
-<!-- .page-header -->
+<div id="primary" class="product-content-area">
+	<main id="main" class="site-main" role="main">
+	<?php if (have_posts()) : ?>
 		<header class="product-header">
-			<h1>OUR PRODUCTS ARE MADE FRESH DAILY</h1>
+			<h1>our products are made fresh daily</h1>
 			<p>We are a team of creative and talented individuals who love making delicious treats.</p>
 			<br>
-
-			<hr class="horizontal-rule"></hr>
-
+			<hr class="horizontal-rule">
 			<?php
-            $terms = get_terms('product-type');
-          ?>
-
+        $terms = get_terms('product-type');
+      ?>
 			<div class="flex-product-type">
 			  <?php if (!empty($terms)) : ?>
 			  <?php foreach ($terms as $term) : ?>
@@ -34,36 +27,24 @@ get_header(); ?>
 			</div>
 				<?php endif; ?>
 		</header>
-
-<!--PRODUCT GRID--------------->
-			<?php /* Start the Loop */ ?>
-			<div class="product-grid">
+		<div class="product-grid">
 			<?php while (have_posts()) : the_post(); ?>
-
-
 			<div class="product-square">
-			<a href="<?php echo the_permalink($product);?>">
-	      <?php if (has_post_thumbnail()) : ?>
-	        <?php the_post_thumbnail('original'); ?>
-	      <?php endif; ?>
-			</a>
-
-			<div class="product-data">
-	      	<span class="product-title"><?php the_title(); ?></span>
+				<a href="<?php echo the_permalink($product);?>">
+		      <?php if (has_post_thumbnail()) : ?>
+			      <?php the_post_thumbnail('original'); ?>
+			    <?php endif; ?>
+				</a>
+				<div class="product-data">
+		      <span class="product-title"><?php the_title(); ?></span>
 					<span class="price"><?php echo CFS()->get('price'); ?></span>
+				</div>
 			</div>
-			</div>
-
-				<?php endwhile; ?>
-			</div>
+			<?php endwhile; ?>
+		</div>
 				<?php the_posts_navigation(); ?>
-
 		<?php else : ?>
-
 		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-
+	</main>
+</div>
 <?php get_footer(); ?>
