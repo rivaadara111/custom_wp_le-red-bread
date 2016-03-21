@@ -14,7 +14,7 @@
 			<header id="masthead" class="site-header" role="banner">
 			<div id="header-buffer-bar"></div>
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php  get_template_directory_uri('name'); ?></a></h1>
+					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php  get_template_directory_uri('Le Red Bread'); ?></a></h1>
 					<a href="<?php echo esc_url(home_url());?>">
 						<img src="<?php  bloginfo(template_directory); ?>/images/lrb-logo.svg" class="logo" alt="Le Red Bread logo">
 					</a>

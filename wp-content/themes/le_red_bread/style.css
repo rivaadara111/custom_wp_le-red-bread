@@ -1286,7 +1286,6 @@ q {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 60vw;
-  margin-left: 4.2rem;
   font-family: "open_sans"; }
   .search-results .entry-title {
     text-transform: uppercase;
@@ -1301,7 +1300,6 @@ q {
       font-weight: bold; }
       .search-results fieldset label .search-field {
         padding: 0.5rem;
-        background: #fafafa;
         line-height: 1.5rem; }
 
 .sticky {

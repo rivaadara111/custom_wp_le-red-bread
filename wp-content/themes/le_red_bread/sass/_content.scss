@@ -180,7 +180,6 @@ q {
   display: flex;
   justify-content: flex-start;
   width: 60vw;
-  margin-left: 4.2rem;
   font-family: $main;
   .entry-title {
     text-transform: uppercase;
@@ -196,7 +195,6 @@ q {
       font-weight: bold;
       .search-field {
         padding: 0.5rem;
-        background: #fafafa;
         line-height: 1.5rem;
       }
     }

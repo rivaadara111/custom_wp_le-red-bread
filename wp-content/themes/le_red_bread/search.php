@@ -12,7 +12,7 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while (have_posts()) : the_post(); ?>
 			<div class="page-content">
-				<?php get_template_part('template-parts/content', 'search'); ?>
+				<?php get_template_part('template-parts/content', 'search'); ?> <!-- only searches content in the template parts?-->
 			</div>
 				<?php endwhile; ?>
 				<?php red_starter_numbered_pagination(); ?>
