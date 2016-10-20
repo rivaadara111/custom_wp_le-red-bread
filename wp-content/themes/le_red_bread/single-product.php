@@ -12,8 +12,8 @@ get_header(); ?>
 			<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 	    	<header class="entry-header">
 	      	<?php if (has_post_thumbnail()) : ?>
-	      			<?php the_post_thumbnail('large'); ?>
-	      		<?php endif; ?>
+	      		<?php the_post_thumbnail('large'); ?>
+	      	<?php endif; ?>
 	    	</header>
 	      <div class="entry-content">
 	  			Price: <?php echo CFS()->get('price'); ?>
